@@ -1,0 +1,15 @@
+%soluna-modal {
+  @apply font-nunito bg-soluna-primary;
+}
+
+%modal-input {
+  @apply py-4 px-5 w-full text-sm font-black appearance-none rounded-md bg-white border border-gray-100 transition-shadow ease-in-out duration-500;
+}
+
+%modal-label-wrap {
+  @apply mb-2 w-full flex items-center font-black;
+}
+
+%modal-label-text {
+  @apply uppercase text-xs text-template-gray-300;
+}

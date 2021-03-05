@@ -1,0 +1,64 @@
+.nav {
+	@apply flex items-center;
+	@apply uppercase text-white font-semibold;
+
+	.brand-logo {
+		@apply flex-grow-0;
+	}
+
+	.navbar {
+		@apply flex-grow;
+		@apply px-8;
+		@apply text-center;
+
+		.nav-list-wrap {
+			@apply list-none;
+			@apply space-x-4;
+
+			.nav-list {
+				@apply inline-block;
+				@apply p-4;
+			}
+		}
+	}
+
+	.contact {
+		@apply flex-grow-0;
+	}
+}
+
+.rolling-menu {
+  @apply bg-transparent;
+
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.scroll-down .rolling-menu {
+  transform: translate3d(0, -100%, 0);
+  -webkit-transform: translate3d(0, -100%, 0);
+  -moz-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  -o-transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .rolling-menu {
+  transform: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+}
+
+
+.scroll-down .rolling-menu,
+.scroll-up .rolling-menu {
+  background: rgb(180,236,81);
+	background: -moz-linear-gradient(157deg, rgba(180,236,81,1) 0%, rgba(66,147,33,1) 63%);
+	background: -webkit-linear-gradient(157deg, rgba(180,236,81,1) 0%, rgba(66,147,33,1) 63%);
+	background: linear-gradient(157deg, rgba(180,236,81,1) 0%, rgba(66,147,33,1) 63%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b4ec51",endColorstr="#429321",GradientType=1);
+}
