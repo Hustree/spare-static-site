@@ -1394,6 +1394,13 @@
 
 /* line 4, src/scss/_globals.scss */
 
+html {
+  scroll-behavior: smooth;
+  scroll-margin-top: 20px;
+}
+
+/* line 9, src/scss/_globals.scss */
+
 .rolling-menu {
   background-color: transparent;
   transition: all 0.4s;
@@ -1403,7 +1410,7 @@
   -o-transition: all 0.4s;
 }
 
-/* line 14, src/scss/_globals.scss */
+/* line 19, src/scss/_globals.scss */
 
 .scroll-down .rolling-menu {
   transform: translate3d(0, -100%, 0);
@@ -1413,7 +1420,7 @@
   -o-transform: translate3d(0, -100%, 0);
 }
 
-/* line 22, src/scss/_globals.scss */
+/* line 27, src/scss/_globals.scss */
 
 .scroll-up .rolling-menu {
   transform: none;
@@ -1423,7 +1430,7 @@
   -o-transform: none;
 }
 
-/* line 30, src/scss/_globals.scss */
+/* line 35, src/scss/_globals.scss */
 
 .text-overflow-truncate {
   --lh: 1.5rem;
@@ -1435,7 +1442,7 @@
   overflow: hidden;
 }
 
-/* line 42, src/scss/_globals.scss */
+/* line 47, src/scss/_globals.scss */
 
 .text-overflow-truncate::before {
   position: absolute;
@@ -1444,7 +1451,7 @@
   right: 0;
 }
 
-/* line 49, src/scss/_globals.scss */
+/* line 54, src/scss/_globals.scss */
 
 .text-overflow-truncate::after {
   content: "";
