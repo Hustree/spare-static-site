@@ -1,0 +1,15 @@
+.cta-section {
+	@apply py-20 text-3xl bg-spare-gray-light;
+
+	.quote {
+		@apply pl-0 lg:pl-8 flex items-center font-noto-sans text-spare-secondary font-bold;
+
+		span {
+			@apply font-source-pro font-normal text-spare-gray-dark;
+		}
+	}
+
+	.download-btn {
+		@apply flex items-center mx-auto pr-0 lg:pr-8;
+	}
+}

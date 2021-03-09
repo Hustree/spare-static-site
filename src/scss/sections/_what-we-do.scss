@@ -1,0 +1,23 @@
+@import './shared';
+
+.what-we-do {
+	@apply px-12 py-32;
+
+	.header {
+		@apply space-y-4;
+		.section-name {
+			@extend %section-name;
+			@apply text-spare-secondary;
+		}
+
+		.header-text {
+			@extend %header-text;
+			@apply text-spare-secondary;
+		}
+
+		.subtext {
+			@extend %subtext;
+			@apply text-spare-gray-dark;
+		}
+	}
+}

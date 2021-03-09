@@ -1,0 +1,12 @@
+%section-name {
+	@apply block font-noto-sans text-xl text-center uppercase font-bold;
+}
+
+%header-text {
+	@apply w-full lg:w-10/12 mx-auto;
+	@apply font-noto-sans text-5xl text-center;
+}
+
+%subtext {
+	@apply font-source-pro text-base text-center;
+}

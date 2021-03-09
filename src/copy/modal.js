@@ -1,20 +1,18 @@
 var targetElement
 
-setTimeout(function() {
-  var elements = document.getElementsByClassName('modal-trigger')
+var elements = document.getElementsByClassName('modal-trigger')
 
-  for (var element of elements) {
-    element.addEventListener('click', function(e) {
-      if (!e) e = window.event;
-      targetElement = document.getElementById(e.target.getAttribute('data-target')) 
-      
-      if (targetElement !== null || targetElement !== '') {
-        targetElement.classList.add('is-shown')
-        document.body.classList.add('overflow-hidden')
-      }
-    }, false)
-  }
-}, 2000)
+for (var element of elements) {
+  element.addEventListener('click', function(e) {
+    if (!e) e = window.event;
+    targetElement = document.getElementById(e.target.getAttribute('data-target')) 
+    
+    if (targetElement !== null || targetElement !== '') {
+      targetElement.classList.add('is-shown')
+      document.body.classList.add('overflow-hidden')
+    }
+  }, false)
+}
 
 var closeBtn = document.querySelectorAll('.close-btn')
   for (var btn of closeBtn) {
@@ -22,7 +20,7 @@ var closeBtn = document.querySelectorAll('.close-btn')
       
       targetElement.classList.remove('is-shown')
       document.body.classList.remove('overflow-hidden')
-      document.body.classList.add('opacity-100')
+      // document.body.classList.add('opacity-100')
   }, false)
 }
 
@@ -30,7 +28,7 @@ addEventListener('keydown', function(e) {
   if (e.keyCode == 27 || e.which == 27) {
     targetElement.classList.remove('is-shown')
     document.body.classList.remove('overflow-hidden')
-    document.body.classList.add('opacity-100')
+    // document.body.classList.add('opacity-100')
   }
 }, false)
 

@@ -1,0 +1,12 @@
+.mission-list {
+	.mission {
+		.mission-icon {
+			@apply mx-auto mt-16 mb-8 w-40;
+		}
+
+		.mission-item {
+			@apply block;
+			@apply font-noto-sans font-bold text-center text-xl text-spare-secondary;
+		}
+	}
+}

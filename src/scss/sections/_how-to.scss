@@ -1,0 +1,90 @@
+@import './shared';
+
+.how-to {
+	@apply relative px-12 pt-60 pb-52;
+	padding-top: 230px;
+	@apply bg-spare-secondary;
+
+	.header {
+		@apply space-y-4;
+		.section-name {
+			@extend %section-name;
+			@apply text-white;
+		}
+
+		.header-text {
+			@extend %header-text;
+			@apply text-white;
+		}
+
+		.subtext {
+			@extend %subtext;
+			@apply text-white;
+		}
+	}
+
+	.section-content {
+		@apply flex items-center space-x-16;
+		@apply mt-32;
+		@apply font-source-pro;
+
+		.section-intro {
+			@apply mb-12 text-white text-xl font-semibold;
+		}
+
+		.step-item {
+			.header {
+				@apply mb-2 font-semibold text-spare-green-lighter uppercase;
+			}
+
+			.info {
+				@apply text-white text-base;
+
+				.item-list {
+					@apply flex items-baseline text-white text-base;
+					
+					.icon {
+						@apply mr-2;
+						width: 12px;
+					}
+				}
+			}
+
+			.partner-cta {
+				@apply font-noto-sans font-bold text-white text-4xl;
+			}
+
+			.cta-btn {
+				@apply block w-full mt-6 px-2 py-4;
+				@apply font-source-pro font-black text-2xl text-center text-white;
+				@apply rounded-lg;
+				background: rgb(180,236,81);
+				background: -moz-linear-gradient(157deg, rgba(180,236,81,1) 0%, rgba(66,147,33,1) 40%);
+				background: -webkit-linear-gradient(157deg, rgba(180,236,81,1) 0%, rgba(66,147,33,1) 40%);
+				background: linear-gradient(157deg, rgba(180,236,81,1) 0%, rgba(66,147,33,1) 40%);
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b4ec51",endColorstr="#429321",GradientType=1);
+			}
+		}
+	}
+
+	.section-divider {
+		@apply absolute;
+		@apply top-0 2xl:-top-1.5 left-0 right-0;
+		@apply w-full h-auto;
+
+		img {
+			@apply w-full;
+		}
+	}
+
+	.section-divider-middle {
+		@apply absolute;
+		@apply -bottom-0.5 left-0;
+		@apply -bottom-0.5 2xl:-bottom-1.5 left-0 right-0;
+		@apply w-full h-auto;
+
+		img {
+			@apply w-full;
+		}
+	}
+}

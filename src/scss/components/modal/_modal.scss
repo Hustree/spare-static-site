@@ -1,0 +1,41 @@
+@import './shared';
+
+.contact-modal {
+	@apply flex items-center justify-center;
+	@apply p-4;
+
+	.form {
+		@apply p-8;
+		width: 100%;
+		@apply bg-white rounded-lg shadow-lg;
+		
+		@screen md {
+			width: 500px;
+		}
+
+		.input-field-heading {
+			@apply mb-2 font-noto-sans font-bold text-sm text-spare-gray-dark uppercase;
+		}
+		
+		.input-field {
+			@apply mb-4 px-2 py-2 w-full appearance-none focus:outline-none;
+			@apply border-b border-solid;
+			@apply font-source-pro;
+		}
+
+		textarea {
+			@apply resize-none;
+		}
+
+		.submit-btn {
+			@apply block w-full mt-6 px-2 py-4;
+			@apply font-source-pro font-black text-2xl text-center text-white;
+			@apply rounded-lg;
+			background: rgb(180,236,81);
+			background: -moz-linear-gradient(157deg, rgba(180,236,81,1) 0%, rgba(66,147,33,1) 40%);
+			background: -webkit-linear-gradient(157deg, rgba(180,236,81,1) 0%, rgba(66,147,33,1) 40%);
+			background: linear-gradient(157deg, rgba(180,236,81,1) 0%, rgba(66,147,33,1) 40%);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b4ec51",endColorstr="#429321",GradientType=1);
+		}
+	}
+}

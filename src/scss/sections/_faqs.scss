@@ -1,0 +1,42 @@
+@import './shared';
+
+.faqs {
+	@apply px-12 py-24;
+
+	.header {
+		@apply space-y-4;
+		.section-name {
+			@extend %section-name;
+			@apply text-spare-secondary;
+		}
+
+		.header-text {
+			@extend %header-text;
+			@apply text-spare-secondary;
+		}
+	}
+
+	.faq-list {
+			@apply py-12;
+
+		.faq {
+			@apply flex items-baseline;
+
+			.faq-icon {
+				@apply flex-none w-12 h-12 p-2 font-source-pro text-spare-green-dark text-2xl text-center font-bold rounded-full bg-spare-green-lighter;
+			}
+
+			.faq-details {
+				@apply px-0 lg:px-4;
+
+				.header {
+					@apply mb-4 font-noto-sans font-bold text-lg text-spare-secondary;
+				}
+
+				.details {
+					@apply font-source-pro text-spare-gray-dark;
+				}
+			}
+		}
+	}
+}

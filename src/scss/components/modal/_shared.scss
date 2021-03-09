@@ -1,15 +1,12 @@
-%soluna-modal {
-  @apply font-nunito bg-soluna-primary;
-}
+.modal {
+	@apply fixed w-px h-px z-20 opacity-0 -inset-0 bg-transparent overscroll-y-contain;
 
-%modal-input {
-  @apply py-4 px-5 w-full text-sm font-black appearance-none rounded-md bg-white border border-gray-100 transition-shadow ease-in-out duration-500;
-}
+	&.is-shown {
+		@apply w-full h-full opacity-100 bg-spare-secondary;
+	}
 
-%modal-label-wrap {
-  @apply mb-2 w-full flex items-center font-black;
-}
-
-%modal-label-text {
-  @apply uppercase text-xs text-template-gray-300;
+	.close-btn {
+		@apply absolute top-4 right-4;
+		@apply block font-noto-sans font-bold text-right text-white text-xs  uppercase;
+	}
 }

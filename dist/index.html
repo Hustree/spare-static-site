@@ -10,42 +10,364 @@
   <body class="antialiased scrolling-touch">
     
     <main class="font-source-pro" role="main">
+      <div class="modal contact-modal" id="contact-modal">
+        <button class="close-btn" type="button">close</button>
+        <section class="form">
+          <form action="https://form.taxi/s/y3k3z0hs" method="POST">
+            <div class="form-control">
+              <label for="name">
+                <p class="input-field-heading">Name</p>
+                  <input class="input-field" type="text" name="name" placeholder="Type your name" id="name" />
+              </label>
+            </div>
+            <div class="form-control">
+              <label for="contact">
+                <p class="input-field-heading">Contact detail</p>
+                  <input class="input-field" type="text" name="contact" placeholder="Type your email/phone" id="contact" />
+              </label>
+            </div>
+            <div class="form-control">
+              <label for="subject">
+                <p class="input-field-heading">Subject</p>
+                  <input class="input-field" type="text" name="subject" placeholder="Type your subject" id="subject" />
+              </label>
+            </div>
+            <div class="form-control">
+              <label for="message">
+                <p class="input-field-heading">Message</p>
+                  <textarea class="input-field" name="message" placeholder="Type your message" id="message" /></textarea>
+              </label>
+            </div>
+            <div class="form-control">
+              <button class="submit-btn" type="submit">Send</button>
+            </div>
+          </form>
+        </section>
+      </div>
+      <nav class="rolling-menu" role="navigation">
+        <section class="container nav">
+          <div class="brand-logo">
+            <img src="../img/spare-logotype.png" alt="Spare Logo">
+          </div>
+          <div class="navbar">
+            <ul class="nav-list-wrap">
+              <li class="nav-list"><a class="nav-item "href="#what-we-do">What we do</a></li>
+              <li class="nav-list"><a class="nav-item "href="#how-it-works">How it works</a></li>
+              <li class="nav-list"><a class="nav-item "href="#who-we-are">Who we are</a></li>
+              <li class="nav-list"><a class="nav-item "href="#faqs">Faqs</a></li>
+            </ul>
+          </div>
+          <div class="contact">
+            <a class="contact-info modal-trigger" data-target="contact-modal" href="javascript:void(0);">Contact Us</a>
+          </div>
+        </section>
+      </nav>
       <header class="hero" role="banner">
-        <nav class="container rolling-menu" role="navigation">
-          <section class="nav">
-            <div class="brand-logo">
-              <img src="../img/spare-logotype.png" alt="Spare Logo">
+        <section class="container">
+          <article class="hero-content">
+            <div class="flex-auto">
+              <h1 class="header">Provide meaningful value to your <span class="text-spare-secondary">spare change</h1>
+              <div class="subtext grid grid-cols-1 gap-4">
+                <div class="info">
+                  <svg class="icon fill-current text-white" viewBox="0 0 18 16">
+                    <path fill-rule="nonzero" d="M14.555 7.252L9.091 1.788 10.364.515 18 8.152l-7.636 7.636-1.273-1.273 5.464-5.463H0v-1.8z"/>
+                  </svg>
+                  Improve the way you save money
+                </div>
+                <div class="info">
+                  <svg class="icon fill-current text-white" viewBox="0 0 18 16">
+                    <path fill-rule="nonzero" d="M14.555 7.252L9.091 1.788 10.364.515 18 8.152l-7.636 7.636-1.273-1.273 5.464-5.463H0v-1.8z"/>
+                  </svg>
+                  Turn your spare change to actual savings
+                </div>
+              </div>
+              <a href="../20210305_SPARE.apk">
+                <img src="../img/playstore-button.png" alt="Download Spare App">
+              </a>
             </div>
-            <div class="navbar">
-              <ul class="nav-list-wrap">
-                <li class="nav-list"><a class="nav-item "href="#what-we-do">What we do</a></li>
-                <li class="nav-list"><a class="nav-item "href="#how-it-works">How it works</a></li>
-                <li class="nav-list"><a class="nav-item "href="#who-we-are">Who we are</a></li>
-                <li class="nav-list"><a class="nav-item "href="#faqs">Faqs</a></li>
-              </ul>
+            <div class="flex-none">
+              <img class="ml-auto" src="../img/hero-phone.png" alt="Spare App Image">
             </div>
-            <div class="contact">
-              <a class="contact-info "href="#contact">Contact Us</a>
-            </div>
-          </section>
-        </nav>
-        <article class="hero-content grid grid-cols-2 gap-6">
-          <div class="col-span-1">
-            <h1 class="header">Provide meaningful value to your <span class="uppercase text-spare-secondary">spare change</span></h1>
-            <p class="subtext"></p>
-          </div>
-          <div class="col-span-1">
-            <img src="../img/hero-phone.png" alt="Spare App Image">
-          </div>
-        </article>
+          </article>
+        </section>
         <div class="section-divider">
           <img src="../svg/hero-divider.svg" alt="">
         </div>
       </header>
+
+      <section class="what-we-do">
+        <div class="container">
+          <header class="header">
+            <small class="section-name">What we do</small>
+            <h1 class="header-text">Bridge a better outlook on accessing the financial inclusion</h1>
+            <p class="subtext">Our noble commitment in the landscape of the financial services is that our purpose should serve our mission</p>
+          </header>
+          <article class="mission-list grid grid-cols-3 gap-4">
+            <div class="col-span-1 mission">
+              <svg class="mission-icon" viewBox="0 0 32 32"><defs/><g fill="none" fill-rule="evenodd"><path stroke="#F1AEAE" d="M22.5 11L30 24H15z"/><path fill="#F1AEAE" d="M9.5 11L17 24H2z"/><path fill="#DB3636" d="M16 6l11 19H5z"/></g></svg>
+              <small class="mission-item">Provide empowerment</small>
+            </div>
+            <div class="col-span-1 mission">
+              <svg class="mission-icon" viewBox="0 0 32 32"><defs/><g fill="none" fill-rule="evenodd" transform="translate(4 9)"><circle cx="3" cy="7" r="3" stroke="#F1E5CA"/><circle cx="8" cy="7" r="4" fill="#EDD08C"/><circle cx="13" cy="7" r="5" fill="#E5BC5B"/><circle cx="18" cy="7" r="7" fill="#DEA82A"/></g></svg>
+              <small class="mission-item">Ensures financial continuity</small>
+            </div>
+
+            <div class="col-span-1 mission">
+              <svg class="mission-icon" viewBox="0 0 32 32"><defs/><g fill="none" fill-rule="evenodd" transform="translate(7 7)"><rect width="9" height="9" x="10" fill="#244DD4" rx="1"/><rect width="9" height="9" x="10" y="10" fill="#7C96E9" rx="1"/><rect width="8" height="8" x=".5" y="10.5" stroke="#CFD8F6" rx="1"/></g></svg>
+              <small class="mission-item">Access to financial inclusion</small>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="how-to">
+        <div class="section-divider">
+          <img src="../svg/section-divider.svg" alt="">
+        </div>
+        <div class="container">
+          <header class="header">
+            <small class="section-name">How it works</small>
+            <h1 class="header-text">It's easy. It's convenient. It's <span class="text-spare-primary">Spare</span></h1>
+          </header>
+
+          <article class="section-content">
+            <div class="flex-none">
+              <img class="ml-auto" src="../img/how-to-phone.png" alt="Spare App Hot It Works Image">
+            </div>
+            <div class="step-list flex-auto">
+              <p class="section-intro">
+                We provide a meaningful value of sparing loose change. Our app will bridge the gap and bring clarity to the complex tenets of the financial services and will boldly provide an access that arms the understanding of our users with having the ability of financial savings through spare change.
+              </p>
+              <div class="grid grid-cols-2 gap-6">
+                <div class="step-item">
+                  <h1 class="header">1— Saved Spare Credits</h1>
+                  <p class="info">Every amount you chose to Spare will be saved in the app</p>
+                </div>
+                <div class="step-item">
+                  <h1 class="header">2— Unique Identification</h1>
+                  <p class="info">Each account is uniquely identifiable through your own unique bar code for security and other transactions such as in-person payment via scanning</p>
+                </div>
+                <div class="step-item">
+                  <h1 class="header">3— Partner Merchants</h1>
+                  <p class="info">All verified partner merchants will be listed in the app as well as have the chance to be part of the featued list</p>
+                </div>
+                <div class="step-item">
+                  <h1 class="header">4— Scan to pay and receive</h1>
+                  <p class="info">You can generate a scannable QR code to perform transactions such as choosing to Spare your loose change or simply using your Spare credits to pay</p>
+                </div>
+                <div class="step-item">
+                  <h1 class="header">5— Navigate Seamlessly</h1>
+                  <div class="info">
+                    <ul class="list-none">
+                      <li class="item-list">
+                        <svg class="icon fill-current text-white" viewBox="0 0 18 16">
+                          <path fill-rule="nonzero" d="M14.555 7.252L9.091 1.788 10.364.515 18 8.152l-7.636 7.636-1.273-1.273 5.464-5.463H0v-1.8z"/>
+                        </svg>
+                        Check partner stores or merchants
+                      </li>
+                      <li class="item-list">
+                        <svg class="icon fill-current text-white" viewBox="0 0 18 16">
+                          <path fill-rule="nonzero" d="M14.555 7.252L9.091 1.788 10.364.515 18 8.152l-7.636 7.636-1.273-1.273 5.464-5.463H0v-1.8z"/>
+                        </svg>
+                        View transaction history
+                      </li>
+                      <li class="item-list">
+                        <svg class="icon fill-current text-white" viewBox="0 0 18 16">
+                          <path fill-rule="nonzero" d="M14.555 7.252L9.091 1.788 10.364.515 18 8.152l-7.636 7.636-1.273-1.273 5.464-5.463H0v-1.8z"/>
+                        </svg>
+                        Scan to pay or receive credits
+                      </li>
+                      <li class="item-list">
+                        <svg class="icon fill-current text-white" viewBox="0 0 18 16">
+                          <path fill-rule="nonzero" d="M14.555 7.252L9.091 1.788 10.364.515 18 8.152l-7.636 7.636-1.273-1.273 5.464-5.463H0v-1.8z"/>
+                        </svg>
+                        Check nearby available partner stores and merchants
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="step-item">
+                  <p class="partner-cta">Want to partner with us?</p>
+                  <button class="cta-btn modal-trigger" data-target="contact-modal" type="button" role="button">Let's Talk</button>
+                </div>
+            </div>
+          </article>
+        </div>
+        <div class="section-divider-middle">
+          <img src="../svg/section-divider-middle.svg" alt="">
+        </div>
+      </section>
+
+      <section class="who-we-are">
+        <div class="container">
+          <header class="header">
+            <small class="section-name">Who we are</small>
+            <h1 class="header-text">We will help you make every spare change meaningful and pave the way to help you through your journey to financial literacy. </h1>
+            <p class="subtext">By the year 2025, Bangko Sentral ng Pilipinas expects that we will be transacting without any coins. It’s time to familiarize <br class="hidden md:block"> yourself with coinless transactions and we will help you achieve that through Spare. With Spare, you will <br class="hidden md:block"> realize that every peso counts and that even the smallest value can help you with your savings.</p>
+          </header>
+          <article class="vision-list grid grid-cols-3 gap-10">
+            <div class="col-span-1 vision">
+              <figure class="icon-wrap">
+                <svg viewBox="0 0 150 150">
+                  <defs/>
+                  <g fill="none" fill-rule="evenodd" transform="translate(25 46)">
+                    <path fill="#E3B54B" fill-opacity=".8" d="M50 8.287c-5.55 5.364-9 12.885-9 21.213 0 8.328 3.45 15.85 9 21.213A29.402 29.402 0 0129.5 59C13.208 59 0 45.792 0 29.5S13.208 0 29.5 0A29.402 29.402 0 0150 8.287z"/>
+                    <circle cx="76.5" cy="29.5" r="29.5" fill="#DEA82A" fill-opacity=".9"/>
+                  </g>
+                </svg>
+              </figure>
+              <small class="vision-item">Brothers in arms, no one gets left behind</small>
+              <p class="info">
+                In order to make sense on the premise of 
+                bridging to the users the meaningful value of 
+                their spare change, Spare gives them a means to 
+                be culturally involve in the financial inclusion.</p>
+            </div>
+            <div class="col-span-1 vision">
+              <figure class="icon-wrap">
+                <svg viewBox="0 0 150 150">
+                  <defs/>
+                  <g fill="none" fill-rule="evenodd" transform="translate(39 27)">
+                    <path fill="#EB5127" d="M20.803 0h33.721c1.557 0 2.123.13 2.713.389a3.6 3.6 0 011.464 1.165c.385.517.64 1.039.99 2.555l12.92 55.992A4 4 0 0168.714 65H4a4 4 0 01-3.855-5.068L15.658 3.914c.404-1.46.667-1.958 1.056-2.45.388-.49.87-.857 1.447-1.1C18.738.12 19.288 0 20.803 0z"/>
+                    <circle cx="36" cy="85" r="11" fill="#EE6E4B"/>
+                  </g>
+                </svg>
+              </figure>
+              <small class="vision-item">A beacon of financial empowerment</small>
+              <p class="info">
+                Spare offers a sense of becoming part of the 
+                financial sector through handling their spare change 
+                intuitively. This means the platform arms them on 
+                driving down the divide and mentality that having a 
+                low source of saving does not mean they are not 
+                qualified to secure their financial stability.</p>
+            </div>
+            <div class="col-span-1 vision">
+              <figure class="icon-wrap">
+                <svg viewBox="0 0 150 150">
+                  <defs/>
+                  <g fill="none" fill-rule="evenodd">
+                    <path fill="#5777E2" d="M54 68l30 40-35-3-6-6z"/>
+                    <path fill="#4468DF" d="M66.5 45L93 107H75l-24-3z"/>
+                    <path fill="#244DD4" d="M83.5 37l24.5 70-24.5 7-35.5-9z"/>
+                  </g>
+                </svg>
+              </figure>
+              <small class="vision-item">Light through the long night</small>
+              <p class="info">
+                Through taking advantage of the technology Spare 
+                offers. We become the light that will guide them on
+                 improving their savings at an increasing level. Emerge 
+                them on the convenience that allows them to earn 
+                savings in every transaction they make. The platform 
+                will serve its purpose of immersing them in the 
+                benefits of microsavings in the digital concept 
+                inclusive finance.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <section class="container">
+          <div class="grid grid-cols-2 gap-10">
+            <div class="quote">
+              <p>Higher savings, lower usage of coins <span>— digitally secured and trustworthy innovative environment</span></p>    
+            </div>
+            <div class="download-btn">
+              <a href="../20210305_SPARE.apk">
+                <img src="../img/playstore-button.png" alt="Download Spare App">
+              </a>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="faqs">
+        <div class="container">
+          <header class="header">
+            <small class="section-name">Faqs</small>
+            <h1 class="header-text">We are a platform for savings</h1>
+          </header>
+          <article class="faq-list">
+            <section class="grid grid-cols-2 gap-6 gap-y-16">
+              <div class="col-span-1">
+                <section class="faq">
+                  <div class="faq-icon">?</div>
+                  <div class="faq-details">
+                    <header class="header">Where do I get Spare?</header>
+                    <p class="details">Just download it through the App store or the Play store.</p>
+                  </div>
+                </section>
+              </div>
+              <div class="col-span-1">
+                <section class="faq">
+                  <div class="faq-icon">?</div>
+                  <div class="faq-details">
+                    <header class="header">Do I need a Government ID to make a Spare Account?</header>
+                    <p class="details">Not at all! You just need to create an account with us and you are good to go! That’s the beauty with Spare, we provide you the means to start saving without the hassle of providing us with different requirements. With us, you can have a platform for saving immediately. 
+                    </p>
+                  </div>
+                </section>
+              </div>
+              <div class="col-span-1">
+                <section class="faq">
+                  <div class="faq-icon">?</div>
+                  <div class="faq-details">
+                    <header class="header">Can I Pay Through Spare?</header>
+                    <p class="details">You definitely can. Doing cashless transactions is the future of the Philippines and we will help you familiarize yourself on how to do it! Simply choose the partner merchant you will be paying from the system and key in the amount. From there, you will get a one-time password so you can verify the transaction. <br> <br> It’s safe, it’s easy, and it’s convenient. 
+                    </p>
+                  </div>
+                </section>
+              </div>
+              <div class="col-span-1">
+                <section class="faq">
+                  <div class="faq-icon">?</div>
+                  <div class="faq-details">
+                    <header class="header">How Can I Cash In?</header>
+                    <p class="details">When you need to put funds in your Spare account, just go to one of our partner merchants and they will be more than happy to assist you!
+                    </p>
+                  </div>
+                </section>
+              </div>
+              <div class="col-span-1">
+                <section class="faq">
+                  <div class="faq-icon">?</div>
+                  <div class="faq-details">
+                    <header class="header">Why Should I Use Spare?</header>
+                    <p class="details">Spare change can sometimes get misplaced. Others even feel like spare change doesn’t have any value at all. However, with Spare, you will know the value of every coin you have. When it gets accumulated in a safe and convenient application, you will appreciate its value.
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </section>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container px-4">
+          <section class="grid grid-cols-2 gap-6">
+            <div class="col-span-1">
+              <header class="header mb-4">
+                <img src="../img/spare-logotype.png" alt="Spare App">
+              </header>
+              <p class="copyright">All rights reserved. Copyright 2021</p>
+            </div>
+            <div class="col-span-1 flex items-center justify-end">
+              <article class="text-right">
+                <a class="inline-block py-1 border-b border-dashed border-white border-opacity-75" href="mailto:sparetechnologies@gmail.com">sparetechnologies@gmail.com</a> <br>
+                <a class="inline-block py-1 border-b border-dashed border-white border-opacity-75" href="tel:+639166922322">+63 9166922322</a>
+              </article>
+            </div>
+          </section>
+        </div>
+      </footer>
     </main>
     
     <!-- Script -->
     <script type="text/javascript" src="js/main.polyfills.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="modal.js"></script>
   </body>
 </html> 

@@ -1,0 +1,8 @@
+.footer {
+	@apply py-8 font-source-pro text-white;
+	background: rgb(180,236,81);
+	background: -moz-linear-gradient(157deg, rgba(180,236,81,1) 0%, rgba(66,147,33,1) 40%);
+	background: -webkit-linear-gradient(157deg, rgba(180,236,81,1) 0%, rgba(66,147,33,1) 40%);
+	background: linear-gradient(157deg, rgba(180,236,81,1) 0%, rgba(66,147,33,1) 40%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b4ec51",endColorstr="#429321",GradientType=1);
+}
