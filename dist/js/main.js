@@ -1,18 +1,11 @@
 /*!
  * spare-landing-page v0.0.1
  * Spare Landing Page
- * (c) 2021 Brian Matthew B. Mamaril
+ * (c) 2024 Brian Matthew B. Mamaril
  * MIT License
  * 
  */
 
-/**
- * Element.matches() polyfill (simple version)
- * https://developer.mozilla.org/en-US/docs/Web/API/Element/matches#Polyfill
- */
-if (!Element.prototype.matches) {
-	Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
-}
 // var hamburger = document.querySelector('.hamburger-wrap')
 // hamburger.addEventListener('click', function(e) {
 // 	if (document.querySelector('.hamburger').classList.contains('is-active')) {
@@ -50,3 +43,10 @@ window.addEventListener("scroll", () => {
   }
   lastScroll = currentScroll
 })
+/**
+ * Element.matches() polyfill (simple version)
+ * https://developer.mozilla.org/en-US/docs/Web/API/Element/matches#Polyfill
+ */
+if (!Element.prototype.matches) {
+	Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
+}

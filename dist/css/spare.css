@@ -1,9 +1,12 @@
 /*!
  * spare-landing-page v0.0.1
  * Spare Landing Page
- * (c) 2021 Brian Matthew B. Mamaril
+ * (c) 2024 Brian Matthew B. Mamaril
  * MIT License
  * 
+ */
+
+/*purgecss start ignore
  */
 
 /*!
@@ -13,8 +16,6 @@
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
-
-/* line 3, node_modules/hamburgers/_sass/hamburgers/_base.scss */
 
 .hamburger {
   padding: 0 0;
@@ -32,27 +33,19 @@
   overflow: visible;
 }
 
-/* line 21, node_modules/hamburgers/_sass/hamburgers/_base.scss */
-
 .hamburger:hover {
   opacity: 0.7;
 }
 
-/* line 31, node_modules/hamburgers/_sass/hamburgers/_base.scss */
-
 .hamburger.is-active:hover {
   opacity: 0.7;
 }
-
-/* line 40, node_modules/hamburgers/_sass/hamburgers/_base.scss */
 
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
   background-color: #fff;
 }
-
-/* line 48, node_modules/hamburgers/_sass/hamburgers/_base.scss */
 
 .hamburger-box {
   width: 40px;
@@ -61,15 +54,11 @@
   position: relative;
 }
 
-/* line 55, node_modules/hamburgers/_sass/hamburgers/_base.scss */
-
 .hamburger-inner {
   display: block;
   top: 50%;
   margin-top: -2px;
 }
-
-/* line 60, node_modules/hamburgers/_sass/hamburgers/_base.scss */
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 40px;
@@ -82,328 +71,234 @@
   transition-timing-function: ease;
 }
 
-/* line 73, node_modules/hamburgers/_sass/hamburgers/_base.scss */
-
 .hamburger-inner::before, .hamburger-inner::after {
   content: "";
   display: block;
 }
 
-/* line 79, node_modules/hamburgers/_sass/hamburgers/_base.scss */
-
 .hamburger-inner::before {
   top: -10px;
 }
-
-/* line 83, node_modules/hamburgers/_sass/hamburgers/_base.scss */
 
 .hamburger-inner::after {
   bottom: -10px;
 }
 
 /*
-   * 3DX
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_3dx.scss */
+ * 3DX
+ */
 
 .hamburger--3dx .hamburger-box {
   perspective: 80px;
 }
 
-/* line 10, node_modules/hamburgers/_sass/hamburgers/types/_3dx.scss */
-
 .hamburger--3dx .hamburger-inner {
   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-/* line 14, node_modules/hamburgers/_sass/hamburgers/types/_3dx.scss */
-
 .hamburger--3dx .hamburger-inner::before, .hamburger--3dx .hamburger-inner::after {
   transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-
-/* line 21, node_modules/hamburgers/_sass/hamburgers/types/_3dx.scss */
 
 .hamburger--3dx.is-active .hamburger-inner {
   background-color: transparent !important;
   transform: rotateY(180deg);
 }
 
-/* line 25, node_modules/hamburgers/_sass/hamburgers/types/_3dx.scss */
-
 .hamburger--3dx.is-active .hamburger-inner::before {
   transform: translate3d(0, 10px, 0) rotate(45deg);
 }
-
-/* line 29, node_modules/hamburgers/_sass/hamburgers/types/_3dx.scss */
 
 .hamburger--3dx.is-active .hamburger-inner::after {
   transform: translate3d(0, -10px, 0) rotate(-45deg);
 }
 
 /*
-   * 3DX Reverse
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_3dx-r.scss */
+ * 3DX Reverse
+ */
 
 .hamburger--3dx-r .hamburger-box {
   perspective: 80px;
 }
 
-/* line 10, node_modules/hamburgers/_sass/hamburgers/types/_3dx-r.scss */
-
 .hamburger--3dx-r .hamburger-inner {
   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-/* line 14, node_modules/hamburgers/_sass/hamburgers/types/_3dx-r.scss */
-
 .hamburger--3dx-r .hamburger-inner::before, .hamburger--3dx-r .hamburger-inner::after {
   transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-
-/* line 21, node_modules/hamburgers/_sass/hamburgers/types/_3dx-r.scss */
 
 .hamburger--3dx-r.is-active .hamburger-inner {
   background-color: transparent !important;
   transform: rotateY(-180deg);
 }
 
-/* line 25, node_modules/hamburgers/_sass/hamburgers/types/_3dx-r.scss */
-
 .hamburger--3dx-r.is-active .hamburger-inner::before {
   transform: translate3d(0, 10px, 0) rotate(45deg);
 }
-
-/* line 29, node_modules/hamburgers/_sass/hamburgers/types/_3dx-r.scss */
 
 .hamburger--3dx-r.is-active .hamburger-inner::after {
   transform: translate3d(0, -10px, 0) rotate(-45deg);
 }
 
 /*
-   * 3DY
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_3dy.scss */
+ * 3DY
+ */
 
 .hamburger--3dy .hamburger-box {
   perspective: 80px;
 }
 
-/* line 10, node_modules/hamburgers/_sass/hamburgers/types/_3dy.scss */
-
 .hamburger--3dy .hamburger-inner {
   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-/* line 14, node_modules/hamburgers/_sass/hamburgers/types/_3dy.scss */
-
 .hamburger--3dy .hamburger-inner::before, .hamburger--3dy .hamburger-inner::after {
   transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-
-/* line 21, node_modules/hamburgers/_sass/hamburgers/types/_3dy.scss */
 
 .hamburger--3dy.is-active .hamburger-inner {
   background-color: transparent !important;
   transform: rotateX(-180deg);
 }
 
-/* line 25, node_modules/hamburgers/_sass/hamburgers/types/_3dy.scss */
-
 .hamburger--3dy.is-active .hamburger-inner::before {
   transform: translate3d(0, 10px, 0) rotate(45deg);
 }
-
-/* line 29, node_modules/hamburgers/_sass/hamburgers/types/_3dy.scss */
 
 .hamburger--3dy.is-active .hamburger-inner::after {
   transform: translate3d(0, -10px, 0) rotate(-45deg);
 }
 
 /*
-   * 3DY Reverse
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_3dy-r.scss */
+ * 3DY Reverse
+ */
 
 .hamburger--3dy-r .hamburger-box {
   perspective: 80px;
 }
 
-/* line 10, node_modules/hamburgers/_sass/hamburgers/types/_3dy-r.scss */
-
 .hamburger--3dy-r .hamburger-inner {
   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-/* line 14, node_modules/hamburgers/_sass/hamburgers/types/_3dy-r.scss */
-
 .hamburger--3dy-r .hamburger-inner::before, .hamburger--3dy-r .hamburger-inner::after {
   transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-
-/* line 21, node_modules/hamburgers/_sass/hamburgers/types/_3dy-r.scss */
 
 .hamburger--3dy-r.is-active .hamburger-inner {
   background-color: transparent !important;
   transform: rotateX(180deg);
 }
 
-/* line 25, node_modules/hamburgers/_sass/hamburgers/types/_3dy-r.scss */
-
 .hamburger--3dy-r.is-active .hamburger-inner::before {
   transform: translate3d(0, 10px, 0) rotate(45deg);
 }
-
-/* line 29, node_modules/hamburgers/_sass/hamburgers/types/_3dy-r.scss */
 
 .hamburger--3dy-r.is-active .hamburger-inner::after {
   transform: translate3d(0, -10px, 0) rotate(-45deg);
 }
 
 /*
-   * 3DXY
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_3dxy.scss */
+ * 3DXY
+ */
 
 .hamburger--3dxy .hamburger-box {
   perspective: 80px;
 }
 
-/* line 10, node_modules/hamburgers/_sass/hamburgers/types/_3dxy.scss */
-
 .hamburger--3dxy .hamburger-inner {
   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-/* line 14, node_modules/hamburgers/_sass/hamburgers/types/_3dxy.scss */
-
 .hamburger--3dxy .hamburger-inner::before, .hamburger--3dxy .hamburger-inner::after {
   transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-
-/* line 21, node_modules/hamburgers/_sass/hamburgers/types/_3dxy.scss */
 
 .hamburger--3dxy.is-active .hamburger-inner {
   background-color: transparent !important;
   transform: rotateX(180deg) rotateY(180deg);
 }
 
-/* line 25, node_modules/hamburgers/_sass/hamburgers/types/_3dxy.scss */
-
 .hamburger--3dxy.is-active .hamburger-inner::before {
   transform: translate3d(0, 10px, 0) rotate(45deg);
 }
-
-/* line 29, node_modules/hamburgers/_sass/hamburgers/types/_3dxy.scss */
 
 .hamburger--3dxy.is-active .hamburger-inner::after {
   transform: translate3d(0, -10px, 0) rotate(-45deg);
 }
 
 /*
-   * 3DXY Reverse
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_3dxy-r.scss */
+ * 3DXY Reverse
+ */
 
 .hamburger--3dxy-r .hamburger-box {
   perspective: 80px;
 }
 
-/* line 10, node_modules/hamburgers/_sass/hamburgers/types/_3dxy-r.scss */
-
 .hamburger--3dxy-r .hamburger-inner {
   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-/* line 14, node_modules/hamburgers/_sass/hamburgers/types/_3dxy-r.scss */
-
 .hamburger--3dxy-r .hamburger-inner::before, .hamburger--3dxy-r .hamburger-inner::after {
   transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-
-/* line 21, node_modules/hamburgers/_sass/hamburgers/types/_3dxy-r.scss */
 
 .hamburger--3dxy-r.is-active .hamburger-inner {
   background-color: transparent !important;
   transform: rotateX(180deg) rotateY(180deg) rotateZ(-180deg);
 }
 
-/* line 25, node_modules/hamburgers/_sass/hamburgers/types/_3dxy-r.scss */
-
 .hamburger--3dxy-r.is-active .hamburger-inner::before {
   transform: translate3d(0, 10px, 0) rotate(45deg);
 }
-
-/* line 29, node_modules/hamburgers/_sass/hamburgers/types/_3dxy-r.scss */
 
 .hamburger--3dxy-r.is-active .hamburger-inner::after {
   transform: translate3d(0, -10px, 0) rotate(-45deg);
 }
 
 /*
-   * Arrow
-   */
-
-/* line 7, node_modules/hamburgers/_sass/hamburgers/types/_arrow.scss */
+ * Arrow
+ */
 
 .hamburger--arrow.is-active .hamburger-inner::before {
   transform: translate3d(-8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
-
-/* line 11, node_modules/hamburgers/_sass/hamburgers/types/_arrow.scss */
 
 .hamburger--arrow.is-active .hamburger-inner::after {
   transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 /*
-   * Arrow Right
-   */
-
-/* line 7, node_modules/hamburgers/_sass/hamburgers/types/_arrow-r.scss */
+ * Arrow Right
+ */
 
 .hamburger--arrow-r.is-active .hamburger-inner::before {
   transform: translate3d(8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
-
-/* line 11, node_modules/hamburgers/_sass/hamburgers/types/_arrow-r.scss */
 
 .hamburger--arrow-r.is-active .hamburger-inner::after {
   transform: translate3d(8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 /*
-   * Arrow Alt
-   */
-
-/* line 7, node_modules/hamburgers/_sass/hamburgers/types/_arrowalt.scss */
+ * Arrow Alt
+ */
 
 .hamburger--arrowalt .hamburger-inner::before {
   transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* line 12, node_modules/hamburgers/_sass/hamburgers/types/_arrowalt.scss */
-
 .hamburger--arrowalt .hamburger-inner::after {
   transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
-/* line 20, node_modules/hamburgers/_sass/hamburgers/types/_arrowalt.scss */
 
 .hamburger--arrowalt.is-active .hamburger-inner::before {
   top: 0;
   transform: translate3d(-8px, -10px, 0) rotate(-45deg) scale(0.7, 1);
   transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
-
-/* line 27, node_modules/hamburgers/_sass/hamburgers/types/_arrowalt.scss */
 
 .hamburger--arrowalt.is-active .hamburger-inner::after {
   bottom: 0;
@@ -412,30 +307,22 @@
 }
 
 /*
-   * Arrow Alt Right
-   */
-
-/* line 7, node_modules/hamburgers/_sass/hamburgers/types/_arrowalt-r.scss */
+ * Arrow Alt Right
+ */
 
 .hamburger--arrowalt-r .hamburger-inner::before {
   transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* line 12, node_modules/hamburgers/_sass/hamburgers/types/_arrowalt-r.scss */
-
 .hamburger--arrowalt-r .hamburger-inner::after {
   transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
-/* line 20, node_modules/hamburgers/_sass/hamburgers/types/_arrowalt-r.scss */
 
 .hamburger--arrowalt-r.is-active .hamburger-inner::before {
   top: 0;
   transform: translate3d(8px, -10px, 0) rotate(45deg) scale(0.7, 1);
   transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
-
-/* line 27, node_modules/hamburgers/_sass/hamburgers/types/_arrowalt-r.scss */
 
 .hamburger--arrowalt-r.is-active .hamburger-inner::after {
   bottom: 0;
@@ -444,73 +331,53 @@
 }
 
 /*
-   * Arrow Turn
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_arrowturn.scss */
+ * Arrow Turn
+ */
 
 .hamburger--arrowturn.is-active .hamburger-inner {
   transform: rotate(-180deg);
 }
 
-/* line 9, node_modules/hamburgers/_sass/hamburgers/types/_arrowturn.scss */
-
 .hamburger--arrowturn.is-active .hamburger-inner::before {
   transform: translate3d(8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
-
-/* line 13, node_modules/hamburgers/_sass/hamburgers/types/_arrowturn.scss */
 
 .hamburger--arrowturn.is-active .hamburger-inner::after {
   transform: translate3d(8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 
 /*
-   * Arrow Turn Right
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_arrowturn-r.scss */
+ * Arrow Turn Right
+ */
 
 .hamburger--arrowturn-r.is-active .hamburger-inner {
   transform: rotate(-180deg);
 }
 
-/* line 9, node_modules/hamburgers/_sass/hamburgers/types/_arrowturn-r.scss */
-
 .hamburger--arrowturn-r.is-active .hamburger-inner::before {
   transform: translate3d(-8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
-
-/* line 13, node_modules/hamburgers/_sass/hamburgers/types/_arrowturn-r.scss */
 
 .hamburger--arrowturn-r.is-active .hamburger-inner::after {
   transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
 /*
-   * Boring
-   */
-
-/* line 7, node_modules/hamburgers/_sass/hamburgers/types/_boring.scss */
+ * Boring
+ */
 
 .hamburger--boring .hamburger-inner, .hamburger--boring .hamburger-inner::before, .hamburger--boring .hamburger-inner::after {
   transition-property: none;
 }
 
-/* line 15, node_modules/hamburgers/_sass/hamburgers/types/_boring.scss */
-
 .hamburger--boring.is-active .hamburger-inner {
   transform: rotate(45deg);
 }
-
-/* line 18, node_modules/hamburgers/_sass/hamburgers/types/_boring.scss */
 
 .hamburger--boring.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
 }
-
-/* line 23, node_modules/hamburgers/_sass/hamburgers/types/_boring.scss */
 
 .hamburger--boring.is-active .hamburger-inner::after {
   bottom: 0;
@@ -518,10 +385,8 @@
 }
 
 /*
-   * Collapse
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_collapse.scss */
+ * Collapse
+ */
 
 .hamburger--collapse .hamburger-inner {
   top: auto;
@@ -531,20 +396,14 @@
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-/* line 13, node_modules/hamburgers/_sass/hamburgers/types/_collapse.scss */
-
 .hamburger--collapse .hamburger-inner::after {
   top: -20px;
   transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
 }
 
-/* line 19, node_modules/hamburgers/_sass/hamburgers/types/_collapse.scss */
-
 .hamburger--collapse .hamburger-inner::before {
   transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-
-/* line 26, node_modules/hamburgers/_sass/hamburgers/types/_collapse.scss */
 
 .hamburger--collapse.is-active .hamburger-inner {
   transform: translate3d(0, -10px, 0) rotate(-45deg);
@@ -552,15 +411,11 @@
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-/* line 31, node_modules/hamburgers/_sass/hamburgers/types/_collapse.scss */
-
 .hamburger--collapse.is-active .hamburger-inner::after {
   top: 0;
   opacity: 0;
   transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
 }
-
-/* line 38, node_modules/hamburgers/_sass/hamburgers/types/_collapse.scss */
 
 .hamburger--collapse.is-active .hamburger-inner::before {
   top: 0;
@@ -569,10 +424,8 @@
 }
 
 /*
-   * Collapse Reverse
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_collapse-r.scss */
+ * Collapse Reverse
+ */
 
 .hamburger--collapse-r .hamburger-inner {
   top: auto;
@@ -582,20 +435,14 @@
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-/* line 13, node_modules/hamburgers/_sass/hamburgers/types/_collapse-r.scss */
-
 .hamburger--collapse-r .hamburger-inner::after {
   top: -20px;
   transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
 }
 
-/* line 19, node_modules/hamburgers/_sass/hamburgers/types/_collapse-r.scss */
-
 .hamburger--collapse-r .hamburger-inner::before {
   transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-
-/* line 26, node_modules/hamburgers/_sass/hamburgers/types/_collapse-r.scss */
 
 .hamburger--collapse-r.is-active .hamburger-inner {
   transform: translate3d(0, -10px, 0) rotate(45deg);
@@ -603,15 +450,11 @@
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-/* line 31, node_modules/hamburgers/_sass/hamburgers/types/_collapse-r.scss */
-
 .hamburger--collapse-r.is-active .hamburger-inner::after {
   top: 0;
   opacity: 0;
   transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
 }
-
-/* line 38, node_modules/hamburgers/_sass/hamburgers/types/_collapse-r.scss */
 
 .hamburger--collapse-r.is-active .hamburger-inner::before {
   top: 0;
@@ -620,10 +463,8 @@
 }
 
 /*
-   * Elastic
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_elastic.scss */
+ * Elastic
+ */
 
 .hamburger--elastic .hamburger-inner {
   top: 2px;
@@ -631,35 +472,25 @@
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-/* line 11, node_modules/hamburgers/_sass/hamburgers/types/_elastic.scss */
-
 .hamburger--elastic .hamburger-inner::before {
   top: 10px;
   transition: opacity 0.125s 0.275s ease;
 }
-
-/* line 16, node_modules/hamburgers/_sass/hamburgers/types/_elastic.scss */
 
 .hamburger--elastic .hamburger-inner::after {
   top: 20px;
   transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-/* line 23, node_modules/hamburgers/_sass/hamburgers/types/_elastic.scss */
-
 .hamburger--elastic.is-active .hamburger-inner {
   transform: translate3d(0, 10px, 0) rotate(135deg);
   transition-delay: 0.075s;
 }
 
-/* line 29, node_modules/hamburgers/_sass/hamburgers/types/_elastic.scss */
-
 .hamburger--elastic.is-active .hamburger-inner::before {
   transition-delay: 0s;
   opacity: 0;
 }
-
-/* line 34, node_modules/hamburgers/_sass/hamburgers/types/_elastic.scss */
 
 .hamburger--elastic.is-active .hamburger-inner::after {
   transform: translate3d(0, -20px, 0) rotate(-270deg);
@@ -667,10 +498,8 @@
 }
 
 /*
-   * Elastic Reverse
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_elastic-r.scss */
+ * Elastic Reverse
+ */
 
 .hamburger--elastic-r .hamburger-inner {
   top: 2px;
@@ -678,35 +507,25 @@
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-/* line 11, node_modules/hamburgers/_sass/hamburgers/types/_elastic-r.scss */
-
 .hamburger--elastic-r .hamburger-inner::before {
   top: 10px;
   transition: opacity 0.125s 0.275s ease;
 }
-
-/* line 16, node_modules/hamburgers/_sass/hamburgers/types/_elastic-r.scss */
 
 .hamburger--elastic-r .hamburger-inner::after {
   top: 20px;
   transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-/* line 23, node_modules/hamburgers/_sass/hamburgers/types/_elastic-r.scss */
-
 .hamburger--elastic-r.is-active .hamburger-inner {
   transform: translate3d(0, 10px, 0) rotate(-135deg);
   transition-delay: 0.075s;
 }
 
-/* line 29, node_modules/hamburgers/_sass/hamburgers/types/_elastic-r.scss */
-
 .hamburger--elastic-r.is-active .hamburger-inner::before {
   transition-delay: 0s;
   opacity: 0;
 }
-
-/* line 34, node_modules/hamburgers/_sass/hamburgers/types/_elastic-r.scss */
 
 .hamburger--elastic-r.is-active .hamburger-inner::after {
   transform: translate3d(0, -20px, 0) rotate(270deg);
@@ -714,29 +533,21 @@
 }
 
 /*
-   * Emphatic
-   */
-
-/* line 5, node_modules/hamburgers/_sass/hamburgers/types/_emphatic.scss */
+ * Emphatic
+ */
 
 .hamburger--emphatic {
   overflow: hidden;
 }
 
-/* line 8, node_modules/hamburgers/_sass/hamburgers/types/_emphatic.scss */
-
 .hamburger--emphatic .hamburger-inner {
   transition: background-color 0.125s 0.175s ease-in;
 }
-
-/* line 11, node_modules/hamburgers/_sass/hamburgers/types/_emphatic.scss */
 
 .hamburger--emphatic .hamburger-inner::before {
   left: 0;
   transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in;
 }
-
-/* line 18, node_modules/hamburgers/_sass/hamburgers/types/_emphatic.scss */
 
 .hamburger--emphatic .hamburger-inner::after {
   top: 10px;
@@ -744,15 +555,11 @@
   transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in;
 }
 
-/* line 28, node_modules/hamburgers/_sass/hamburgers/types/_emphatic.scss */
-
 .hamburger--emphatic.is-active .hamburger-inner {
   transition-delay: 0s;
   transition-timing-function: ease-out;
   background-color: transparent !important;
 }
-
-/* line 33, node_modules/hamburgers/_sass/hamburgers/types/_emphatic.scss */
 
 .hamburger--emphatic.is-active .hamburger-inner::before {
   left: -80px;
@@ -760,8 +567,6 @@
   transform: translate3d(80px, 80px, 0) rotate(45deg);
   transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
-/* line 42, node_modules/hamburgers/_sass/hamburgers/types/_emphatic.scss */
 
 .hamburger--emphatic.is-active .hamburger-inner::after {
   right: -80px;
@@ -771,29 +576,21 @@
 }
 
 /*
-   * Emphatic Reverse
-   */
-
-/* line 5, node_modules/hamburgers/_sass/hamburgers/types/_emphatic-r.scss */
+ * Emphatic Reverse
+ */
 
 .hamburger--emphatic-r {
   overflow: hidden;
 }
 
-/* line 8, node_modules/hamburgers/_sass/hamburgers/types/_emphatic-r.scss */
-
 .hamburger--emphatic-r .hamburger-inner {
   transition: background-color 0.125s 0.175s ease-in;
 }
-
-/* line 11, node_modules/hamburgers/_sass/hamburgers/types/_emphatic-r.scss */
 
 .hamburger--emphatic-r .hamburger-inner::before {
   left: 0;
   transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in;
 }
-
-/* line 18, node_modules/hamburgers/_sass/hamburgers/types/_emphatic-r.scss */
 
 .hamburger--emphatic-r .hamburger-inner::after {
   top: 10px;
@@ -801,15 +598,11 @@
   transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in;
 }
 
-/* line 28, node_modules/hamburgers/_sass/hamburgers/types/_emphatic-r.scss */
-
 .hamburger--emphatic-r.is-active .hamburger-inner {
   transition-delay: 0s;
   transition-timing-function: ease-out;
   background-color: transparent !important;
 }
-
-/* line 33, node_modules/hamburgers/_sass/hamburgers/types/_emphatic-r.scss */
 
 .hamburger--emphatic-r.is-active .hamburger-inner::before {
   left: -80px;
@@ -817,8 +610,6 @@
   transform: translate3d(80px, -80px, 0) rotate(-45deg);
   transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
-/* line 42, node_modules/hamburgers/_sass/hamburgers/types/_emphatic-r.scss */
 
 .hamburger--emphatic-r.is-active .hamburger-inner::after {
   right: -80px;
@@ -828,45 +619,33 @@
 }
 
 /*
-   * Minus
-   */
-
-/* line 7, node_modules/hamburgers/_sass/hamburgers/types/_minus.scss */
+ * Minus
+ */
 
 .hamburger--minus .hamburger-inner::before, .hamburger--minus .hamburger-inner::after {
   transition: bottom 0.08s 0s ease-out, top 0.08s 0s ease-out, opacity 0s linear;
 }
-
-/* line 17, node_modules/hamburgers/_sass/hamburgers/types/_minus.scss */
 
 .hamburger--minus.is-active .hamburger-inner::before, .hamburger--minus.is-active .hamburger-inner::after {
   opacity: 0;
   transition: bottom 0.08s ease-out, top 0.08s ease-out, opacity 0s 0.08s linear;
 }
 
-/* line 24, node_modules/hamburgers/_sass/hamburgers/types/_minus.scss */
-
 .hamburger--minus.is-active .hamburger-inner::before {
   top: 0;
 }
-
-/* line 28, node_modules/hamburgers/_sass/hamburgers/types/_minus.scss */
 
 .hamburger--minus.is-active .hamburger-inner::after {
   bottom: 0;
 }
 
 /*
-   * Slider
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_slider.scss */
+ * Slider
+ */
 
 .hamburger--slider .hamburger-inner {
   top: 2px;
 }
-
-/* line 9, node_modules/hamburgers/_sass/hamburgers/types/_slider.scss */
 
 .hamburger--slider .hamburger-inner::before {
   top: 10px;
@@ -875,42 +654,30 @@
   transition-duration: 0.15s;
 }
 
-/* line 16, node_modules/hamburgers/_sass/hamburgers/types/_slider.scss */
-
 .hamburger--slider .hamburger-inner::after {
   top: 20px;
 }
-
-/* line 22, node_modules/hamburgers/_sass/hamburgers/types/_slider.scss */
 
 .hamburger--slider.is-active .hamburger-inner {
   transform: translate3d(0, 10px, 0) rotate(45deg);
 }
 
-/* line 27, node_modules/hamburgers/_sass/hamburgers/types/_slider.scss */
-
 .hamburger--slider.is-active .hamburger-inner::before {
-  transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+  transform: rotate(-45deg) translate3d(-5.7142857143px, -6px, 0);
   opacity: 0;
 }
-
-/* line 32, node_modules/hamburgers/_sass/hamburgers/types/_slider.scss */
 
 .hamburger--slider.is-active .hamburger-inner::after {
   transform: translate3d(0, -20px, 0) rotate(-90deg);
 }
 
 /*
-   * Slider Reverse
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_slider-r.scss */
+ * Slider Reverse
+ */
 
 .hamburger--slider-r .hamburger-inner {
   top: 2px;
 }
-
-/* line 9, node_modules/hamburgers/_sass/hamburgers/types/_slider-r.scss */
 
 .hamburger--slider-r .hamburger-inner::before {
   top: 10px;
@@ -919,55 +686,39 @@
   transition-duration: 0.15s;
 }
 
-/* line 16, node_modules/hamburgers/_sass/hamburgers/types/_slider-r.scss */
-
 .hamburger--slider-r .hamburger-inner::after {
   top: 20px;
 }
-
-/* line 22, node_modules/hamburgers/_sass/hamburgers/types/_slider-r.scss */
 
 .hamburger--slider-r.is-active .hamburger-inner {
   transform: translate3d(0, 10px, 0) rotate(-45deg);
 }
 
-/* line 27, node_modules/hamburgers/_sass/hamburgers/types/_slider-r.scss */
-
 .hamburger--slider-r.is-active .hamburger-inner::before {
-  transform: rotate(45deg) translate3d(5.71429px, -6px, 0);
+  transform: rotate(45deg) translate3d(5.7142857143px, -6px, 0);
   opacity: 0;
 }
-
-/* line 32, node_modules/hamburgers/_sass/hamburgers/types/_slider-r.scss */
 
 .hamburger--slider-r.is-active .hamburger-inner::after {
   transform: translate3d(0, -20px, 0) rotate(90deg);
 }
 
 /*
-   * Spin
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_spin.scss */
+ * Spin
+ */
 
 .hamburger--spin .hamburger-inner {
   transition-duration: 0.22s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-/* line 10, node_modules/hamburgers/_sass/hamburgers/types/_spin.scss */
-
 .hamburger--spin .hamburger-inner::before {
   transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
 }
 
-/* line 15, node_modules/hamburgers/_sass/hamburgers/types/_spin.scss */
-
 .hamburger--spin .hamburger-inner::after {
   transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-
-/* line 22, node_modules/hamburgers/_sass/hamburgers/types/_spin.scss */
 
 .hamburger--spin.is-active .hamburger-inner {
   transform: rotate(225deg);
@@ -975,15 +726,11 @@
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-/* line 27, node_modules/hamburgers/_sass/hamburgers/types/_spin.scss */
-
 .hamburger--spin.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
   transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
-
-/* line 34, node_modules/hamburgers/_sass/hamburgers/types/_spin.scss */
 
 .hamburger--spin.is-active .hamburger-inner::after {
   bottom: 0;
@@ -992,29 +739,21 @@
 }
 
 /*
-   * Spin Reverse
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_spin-r.scss */
+ * Spin Reverse
+ */
 
 .hamburger--spin-r .hamburger-inner {
   transition-duration: 0.22s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-/* line 10, node_modules/hamburgers/_sass/hamburgers/types/_spin-r.scss */
-
 .hamburger--spin-r .hamburger-inner::before {
   transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
 }
 
-/* line 15, node_modules/hamburgers/_sass/hamburgers/types/_spin-r.scss */
-
 .hamburger--spin-r .hamburger-inner::after {
   transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-
-/* line 22, node_modules/hamburgers/_sass/hamburgers/types/_spin-r.scss */
 
 .hamburger--spin-r.is-active .hamburger-inner {
   transform: rotate(-225deg);
@@ -1022,15 +761,11 @@
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-/* line 27, node_modules/hamburgers/_sass/hamburgers/types/_spin-r.scss */
-
 .hamburger--spin-r.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
   transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
-
-/* line 34, node_modules/hamburgers/_sass/hamburgers/types/_spin-r.scss */
 
 .hamburger--spin-r.is-active .hamburger-inner::after {
   bottom: 0;
@@ -1039,46 +774,34 @@
 }
 
 /*
-   * Spring
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_spring.scss */
+ * Spring
+ */
 
 .hamburger--spring .hamburger-inner {
   top: 2px;
   transition: background-color 0s 0.13s linear;
 }
 
-/* line 10, node_modules/hamburgers/_sass/hamburgers/types/_spring.scss */
-
 .hamburger--spring .hamburger-inner::before {
   top: 10px;
   transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-
-/* line 16, node_modules/hamburgers/_sass/hamburgers/types/_spring.scss */
 
 .hamburger--spring .hamburger-inner::after {
   top: 20px;
   transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-/* line 24, node_modules/hamburgers/_sass/hamburgers/types/_spring.scss */
-
 .hamburger--spring.is-active .hamburger-inner {
   transition-delay: 0.22s;
   background-color: transparent !important;
 }
-
-/* line 28, node_modules/hamburgers/_sass/hamburgers/types/_spring.scss */
 
 .hamburger--spring.is-active .hamburger-inner::before {
   top: 0;
   transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
   transform: translate3d(0, 10px, 0) rotate(45deg);
 }
-
-/* line 35, node_modules/hamburgers/_sass/hamburgers/types/_spring.scss */
 
 .hamburger--spring.is-active .hamburger-inner::after {
   top: 0;
@@ -1087,10 +810,8 @@
 }
 
 /*
-   * Spring Reverse
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_spring-r.scss */
+ * Spring Reverse
+ */
 
 .hamburger--spring-r .hamburger-inner {
   top: auto;
@@ -1100,20 +821,14 @@
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-/* line 13, node_modules/hamburgers/_sass/hamburgers/types/_spring-r.scss */
-
 .hamburger--spring-r .hamburger-inner::after {
   top: -20px;
   transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0s linear;
 }
 
-/* line 19, node_modules/hamburgers/_sass/hamburgers/types/_spring-r.scss */
-
 .hamburger--spring-r .hamburger-inner::before {
   transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-
-/* line 26, node_modules/hamburgers/_sass/hamburgers/types/_spring-r.scss */
 
 .hamburger--spring-r.is-active .hamburger-inner {
   transform: translate3d(0, -10px, 0) rotate(-45deg);
@@ -1121,15 +836,11 @@
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-/* line 31, node_modules/hamburgers/_sass/hamburgers/types/_spring-r.scss */
-
 .hamburger--spring-r.is-active .hamburger-inner::after {
   top: 0;
   opacity: 0;
   transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0s 0.22s linear;
 }
-
-/* line 38, node_modules/hamburgers/_sass/hamburgers/types/_spring-r.scss */
 
 .hamburger--spring-r.is-active .hamburger-inner::before {
   top: 0;
@@ -1138,28 +849,20 @@
 }
 
 /*
-   * Stand
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_stand.scss */
+ * Stand
+ */
 
 .hamburger--stand .hamburger-inner {
   transition: transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color 0s 0.075s linear;
 }
 
-/* line 10, node_modules/hamburgers/_sass/hamburgers/types/_stand.scss */
-
 .hamburger--stand .hamburger-inner::before {
   transition: top 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-/* line 15, node_modules/hamburgers/_sass/hamburgers/types/_stand.scss */
-
 .hamburger--stand .hamburger-inner::after {
   transition: bottom 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-
-/* line 22, node_modules/hamburgers/_sass/hamburgers/types/_stand.scss */
 
 .hamburger--stand.is-active .hamburger-inner {
   transform: rotate(90deg);
@@ -1167,15 +870,11 @@
   transition: transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 0s 0.15s linear;
 }
 
-/* line 29, node_modules/hamburgers/_sass/hamburgers/types/_stand.scss */
-
 .hamburger--stand.is-active .hamburger-inner::before {
   top: 0;
   transform: rotate(-45deg);
   transition: top 0.075s 0.1s ease-out, transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-
-/* line 36, node_modules/hamburgers/_sass/hamburgers/types/_stand.scss */
 
 .hamburger--stand.is-active .hamburger-inner::after {
   bottom: 0;
@@ -1184,28 +883,20 @@
 }
 
 /*
-   * Stand Reverse
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_stand-r.scss */
+ * Stand Reverse
+ */
 
 .hamburger--stand-r .hamburger-inner {
   transition: transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19), background-color 0s 0.075s linear;
 }
 
-/* line 10, node_modules/hamburgers/_sass/hamburgers/types/_stand-r.scss */
-
 .hamburger--stand-r .hamburger-inner::before {
   transition: top 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-/* line 15, node_modules/hamburgers/_sass/hamburgers/types/_stand-r.scss */
-
 .hamburger--stand-r .hamburger-inner::after {
   transition: bottom 0.075s 0.075s ease-in, transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-
-/* line 22, node_modules/hamburgers/_sass/hamburgers/types/_stand-r.scss */
 
 .hamburger--stand-r.is-active .hamburger-inner {
   transform: rotate(-90deg);
@@ -1213,15 +904,11 @@
   transition: transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 0s 0.15s linear;
 }
 
-/* line 29, node_modules/hamburgers/_sass/hamburgers/types/_stand-r.scss */
-
 .hamburger--stand-r.is-active .hamburger-inner::before {
   top: 0;
   transform: rotate(-45deg);
   transition: top 0.075s 0.1s ease-out, transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-
-/* line 36, node_modules/hamburgers/_sass/hamburgers/types/_stand-r.scss */
 
 .hamburger--stand-r.is-active .hamburger-inner::after {
   bottom: 0;
@@ -1230,29 +917,21 @@
 }
 
 /*
-   * Squeeze
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_squeeze.scss */
+ * Squeeze
+ */
 
 .hamburger--squeeze .hamburger-inner {
   transition-duration: 0.075s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-/* line 10, node_modules/hamburgers/_sass/hamburgers/types/_squeeze.scss */
-
 .hamburger--squeeze .hamburger-inner::before {
   transition: top 0.075s 0.12s ease, opacity 0.075s ease;
 }
 
-/* line 15, node_modules/hamburgers/_sass/hamburgers/types/_squeeze.scss */
-
 .hamburger--squeeze .hamburger-inner::after {
   transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-
-/* line 22, node_modules/hamburgers/_sass/hamburgers/types/_squeeze.scss */
 
 .hamburger--squeeze.is-active .hamburger-inner {
   transform: rotate(45deg);
@@ -1260,15 +939,11 @@
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-/* line 27, node_modules/hamburgers/_sass/hamburgers/types/_squeeze.scss */
-
 .hamburger--squeeze.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
   transition: top 0.075s ease, opacity 0.075s 0.12s ease;
 }
-
-/* line 34, node_modules/hamburgers/_sass/hamburgers/types/_squeeze.scss */
 
 .hamburger--squeeze.is-active .hamburger-inner::after {
   bottom: 0;
@@ -1277,17 +952,13 @@
 }
 
 /*
-   * Vortex
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_vortex.scss */
+ * Vortex
+ */
 
 .hamburger--vortex .hamburger-inner {
   transition-duration: 0.2s;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
-
-/* line 10, node_modules/hamburgers/_sass/hamburgers/types/_vortex.scss */
 
 .hamburger--vortex .hamburger-inner::before, .hamburger--vortex .hamburger-inner::after {
   transition-duration: 0s;
@@ -1295,39 +966,27 @@
   transition-timing-function: linear;
 }
 
-/* line 17, node_modules/hamburgers/_sass/hamburgers/types/_vortex.scss */
-
 .hamburger--vortex .hamburger-inner::before {
   transition-property: top, opacity;
 }
 
-/* line 21, node_modules/hamburgers/_sass/hamburgers/types/_vortex.scss */
-
 .hamburger--vortex .hamburger-inner::after {
   transition-property: bottom, transform;
 }
-
-/* line 27, node_modules/hamburgers/_sass/hamburgers/types/_vortex.scss */
 
 .hamburger--vortex.is-active .hamburger-inner {
   transform: rotate(765deg);
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/* line 31, node_modules/hamburgers/_sass/hamburgers/types/_vortex.scss */
-
 .hamburger--vortex.is-active .hamburger-inner::before, .hamburger--vortex.is-active .hamburger-inner::after {
   transition-delay: 0s;
 }
-
-/* line 36, node_modules/hamburgers/_sass/hamburgers/types/_vortex.scss */
 
 .hamburger--vortex.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
 }
-
-/* line 41, node_modules/hamburgers/_sass/hamburgers/types/_vortex.scss */
 
 .hamburger--vortex.is-active .hamburger-inner::after {
   bottom: 0;
@@ -1335,17 +994,13 @@
 }
 
 /*
-   * Vortex Reverse
-   */
-
-/* line 6, node_modules/hamburgers/_sass/hamburgers/types/_vortex-r.scss */
+ * Vortex Reverse
+ */
 
 .hamburger--vortex-r .hamburger-inner {
   transition-duration: 0.2s;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
-
-/* line 10, node_modules/hamburgers/_sass/hamburgers/types/_vortex-r.scss */
 
 .hamburger--vortex-r .hamburger-inner::before, .hamburger--vortex-r .hamburger-inner::after {
   transition-duration: 0s;
@@ -1353,53 +1008,37 @@
   transition-timing-function: linear;
 }
 
-/* line 17, node_modules/hamburgers/_sass/hamburgers/types/_vortex-r.scss */
-
 .hamburger--vortex-r .hamburger-inner::before {
   transition-property: top, opacity;
 }
 
-/* line 21, node_modules/hamburgers/_sass/hamburgers/types/_vortex-r.scss */
-
 .hamburger--vortex-r .hamburger-inner::after {
   transition-property: bottom, transform;
 }
-
-/* line 27, node_modules/hamburgers/_sass/hamburgers/types/_vortex-r.scss */
 
 .hamburger--vortex-r.is-active .hamburger-inner {
   transform: rotate(-765deg);
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/* line 31, node_modules/hamburgers/_sass/hamburgers/types/_vortex-r.scss */
-
 .hamburger--vortex-r.is-active .hamburger-inner::before, .hamburger--vortex-r.is-active .hamburger-inner::after {
   transition-delay: 0s;
 }
-
-/* line 36, node_modules/hamburgers/_sass/hamburgers/types/_vortex-r.scss */
 
 .hamburger--vortex-r.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
 }
 
-/* line 41, node_modules/hamburgers/_sass/hamburgers/types/_vortex-r.scss */
-
 .hamburger--vortex-r.is-active .hamburger-inner::after {
   bottom: 0;
   transform: rotate(-90deg);
 }
 
-/* line 4, src/scss/_globals.scss */
-
 html {
   scroll-behavior: smooth;
   scroll-margin-top: 20px;
 }
-
-/* line 9, src/scss/_globals.scss */
 
 .rolling-menu {
   background-color: transparent;
@@ -1410,8 +1049,6 @@ html {
   -o-transition: all 0.4s;
 }
 
-/* line 19, src/scss/_globals.scss */
-
 .scroll-down .rolling-menu {
   transform: translate3d(0, -100%, 0);
   -webkit-transform: translate3d(0, -100%, 0);
@@ -1420,8 +1057,6 @@ html {
   -o-transform: translate3d(0, -100%, 0);
 }
 
-/* line 27, src/scss/_globals.scss */
-
 .scroll-up .rolling-menu {
   transform: none;
   -webkit-transform: none;
@@ -1429,8 +1064,6 @@ html {
   -ms-transform: none;
   -o-transform: none;
 }
-
-/* line 35, src/scss/_globals.scss */
 
 .text-overflow-truncate {
   --lh: 1.5rem;
@@ -1442,16 +1075,12 @@ html {
   overflow: hidden;
 }
 
-/* line 47, src/scss/_globals.scss */
-
 .text-overflow-truncate::before {
   position: absolute;
   content: "...";
   bottom: 0;
   right: 0;
 }
-
-/* line 54, src/scss/_globals.scss */
 
 .text-overflow-truncate::after {
   content: "";
@@ -1461,8 +1090,6 @@ html {
   height: 1rem;
   background-color: white;
 }
-
-/* line 1, src/scss/base/_base.scss */
 
 :root {
   --spare-color-primary: rgba(180, 236, 81, 1);
@@ -1481,155 +1108,121 @@ html {
   --spare-color-green-lighter: rgba(184, 233, 134, 1);
   --spare-color-gray-dark: rgba(155, 155, 155, 1);
   --spare-color-gray-light: rgba(242, 244, 246, 1);
-  --spare-font-family-primary: 'Source Sans Pro';
-  --spare-font-family-secondary: 'Noto Sans';
+  --spare-font-family-primary: "Source Sans Pro";
+  --spare-font-family-secondary: "Noto Sans";
 }
 
 /* source-sans-pro-200 - latin */
 
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
 
   font-style: normal;
 
   font-weight: 200;
 
-  src: url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-200.eot");
+  src: url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-200.eot"); /* IE9 Compat Modes */
 
-  /* IE9 Compat Modes */
-
-  src: local(""), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-200.eot?#iefix") format("embedded-opentype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-200.woff2") format("woff2"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-200.woff") format("woff"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-200.ttf") format("truetype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-200.svg#SourceSansPro") format("svg");
-
-  /* Legacy iOS */
+  src: local(""), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-200.eot?#iefix") format("embedded-opentype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-200.woff2") format("woff2"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-200.woff") format("woff"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-200.ttf") format("truetype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-200.svg#SourceSansPro") format("svg"); /* Legacy iOS */
 }
 
 /* source-sans-pro-300 - latin */
 
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
 
   font-style: normal;
 
   font-weight: 300;
 
-  src: url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-300.eot");
+  src: url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-300.eot"); /* IE9 Compat Modes */
 
-  /* IE9 Compat Modes */
-
-  src: local(""), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-300.eot?#iefix") format("embedded-opentype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-300.woff2") format("woff2"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-300.woff") format("woff"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-300.ttf") format("truetype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-300.svg#SourceSansPro") format("svg");
-
-  /* Legacy iOS */
+  src: local(""), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-300.eot?#iefix") format("embedded-opentype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-300.woff2") format("woff2"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-300.woff") format("woff"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-300.ttf") format("truetype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-300.svg#SourceSansPro") format("svg"); /* Legacy iOS */
 }
 
 /* source-sans-pro-regular - latin */
 
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
 
   font-style: normal;
 
   font-weight: 400;
 
-  src: url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-regular.eot");
+  src: url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-regular.eot"); /* IE9 Compat Modes */
 
-  /* IE9 Compat Modes */
-
-  src: local(""), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-regular.woff2") format("woff2"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-regular.woff") format("woff"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-regular.ttf") format("truetype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-regular.svg#SourceSansPro") format("svg");
-
-  /* Legacy iOS */
+  src: local(""), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-regular.woff2") format("woff2"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-regular.woff") format("woff"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-regular.ttf") format("truetype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-regular.svg#SourceSansPro") format("svg"); /* Legacy iOS */
 }
 
 /* source-sans-pro-600 - latin */
 
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
 
   font-style: normal;
 
   font-weight: 600;
 
-  src: url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-600.eot");
+  src: url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-600.eot"); /* IE9 Compat Modes */
 
-  /* IE9 Compat Modes */
-
-  src: local(""), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-600.eot?#iefix") format("embedded-opentype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-600.woff2") format("woff2"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-600.woff") format("woff"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-600.ttf") format("truetype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-600.svg#SourceSansPro") format("svg");
-
-  /* Legacy iOS */
+  src: local(""), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-600.eot?#iefix") format("embedded-opentype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-600.woff2") format("woff2"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-600.woff") format("woff"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-600.ttf") format("truetype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-600.svg#SourceSansPro") format("svg"); /* Legacy iOS */
 }
 
 /* source-sans-pro-900 - latin */
 
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
 
   font-style: normal;
 
   font-weight: 900;
 
-  src: url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-900.eot");
+  src: url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-900.eot"); /* IE9 Compat Modes */
 
-  /* IE9 Compat Modes */
-
-  src: local(""), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-900.eot?#iefix") format("embedded-opentype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-900.woff2") format("woff2"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-900.woff") format("woff"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-900.ttf") format("truetype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-900.svg#SourceSansPro") format("svg");
-
-  /* Legacy iOS */
+  src: local(""), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-900.eot?#iefix") format("embedded-opentype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-900.woff2") format("woff2"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-900.woff") format("woff"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-900.ttf") format("truetype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-900.svg#SourceSansPro") format("svg"); /* Legacy iOS */
 }
 
 /* source-sans-pro-700 - latin */
 
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
 
   font-style: normal;
 
   font-weight: 700;
 
-  src: url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-700.eot");
+  src: url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-700.eot"); /* IE9 Compat Modes */
 
-  /* IE9 Compat Modes */
-
-  src: local(""), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-700.eot?#iefix") format("embedded-opentype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-700.woff2") format("woff2"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-700.woff") format("woff"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-700.ttf") format("truetype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-700.svg#SourceSansPro") format("svg");
-
-  /* Legacy iOS */
+  src: local(""), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-700.eot?#iefix") format("embedded-opentype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-700.woff2") format("woff2"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-700.woff") format("woff"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-700.ttf") format("truetype"), url("../../fonts/Source-Sans-Pro/source-sans-pro-v14-latin-700.svg#SourceSansPro") format("svg"); /* Legacy iOS */
 }
 
 /* noto-sans-regular - latin */
 
 @font-face {
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
 
   font-style: normal;
 
   font-weight: 400;
 
-  src: url("../../fonts/Noto-Sans/noto-sans-v11-latin-regular.eot");
+  src: url("../../fonts/Noto-Sans/noto-sans-v11-latin-regular.eot"); /* IE9 Compat Modes */
 
-  /* IE9 Compat Modes */
-
-  src: local(""), url("../../fonts/Noto-Sans/noto-sans-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Noto-Sans/noto-sans-v11-latin-regular.woff2") format("woff2"), url("../../fonts/Noto-Sans/noto-sans-v11-latin-regular.woff") format("woff"), url("../../fonts/Noto-Sans/noto-sans-v11-latin-regular.ttf") format("truetype"), url("../../fonts/Noto-Sans/noto-sans-v11-latin-regular.svg#NotoSans") format("svg");
-
-  /* Legacy iOS */
+  src: local(""), url("../../fonts/Noto-Sans/noto-sans-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Noto-Sans/noto-sans-v11-latin-regular.woff2") format("woff2"), url("../../fonts/Noto-Sans/noto-sans-v11-latin-regular.woff") format("woff"), url("../../fonts/Noto-Sans/noto-sans-v11-latin-regular.ttf") format("truetype"), url("../../fonts/Noto-Sans/noto-sans-v11-latin-regular.svg#NotoSans") format("svg"); /* Legacy iOS */
 }
 
 /* noto-sans-700 - latin */
 
 @font-face {
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
 
   font-style: normal;
 
   font-weight: 700;
 
-  src: url("../../fonts/Noto-Sans/noto-sans-v11-latin-700.eot");
+  src: url("../../fonts/Noto-Sans/noto-sans-v11-latin-700.eot"); /* IE9 Compat Modes */
 
-  /* IE9 Compat Modes */
-
-  src: local(""), url("../../fonts/Noto-Sans/noto-sans-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("../../fonts/Noto-Sans/noto-sans-v11-latin-700.woff2") format("woff2"), url("../../fonts/Noto-Sans/noto-sans-v11-latin-700.woff") format("woff"), url("../../fonts/Noto-Sans/noto-sans-v11-latin-700.ttf") format("truetype"), url("../../fonts/Noto-Sans/noto-sans-v11-latin-700.svg#NotoSans") format("svg");
-
-  /* Legacy iOS */
+  src: local(""), url("../../fonts/Noto-Sans/noto-sans-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("../../fonts/Noto-Sans/noto-sans-v11-latin-700.woff2") format("woff2"), url("../../fonts/Noto-Sans/noto-sans-v11-latin-700.woff") format("woff"), url("../../fonts/Noto-Sans/noto-sans-v11-latin-700.ttf") format("truetype"), url("../../fonts/Noto-Sans/noto-sans-v11-latin-700.svg#NotoSans") format("svg"); /* Legacy iOS */
 }
-
-/* line 1, src/scss/hero/_hero.scss */
 
 .hero {
   position: relative;
@@ -1639,12 +1232,15 @@ html {
   padding-bottom: 4rem;
   padding-bottom: 15rem;
   padding-bottom: 230px;
-  background: #b4ec51;
-  background: linear-gradient(157deg, #b4ec51 0%, #429321 40%);
+  background: rgb(180, 236, 81);
+  background: linear-gradient(157deg, rgb(180, 236, 81) 0%, rgb(66, 147, 33) 40%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b4ec51",endColorstr="#429321",GradientType=1);
 }
 
-/* line 12, src/scss/hero/_hero.scss */
+.hero .hero-content {
+  display: flex;
+  align-items: center;
+}
 
 .hero .hero-content > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -1653,13 +1249,9 @@ html {
 }
 
 .hero .hero-content {
-  display: flex;
-  align-items: center;
   margin-top: 4rem;
   font-family: var(--spare-font-family-secondary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-/* line 16, src/scss/hero/_hero.scss */
 
 .hero .hero-content .header {
   font-weight: 700;
@@ -1669,15 +1261,11 @@ html {
   line-height: 5rem;
 }
 
-/* line 22, src/scss/hero/_hero.scss */
-
 .hero .hero-content .subtext {
-  font-family: var(--spare-font-family-primary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-top: 2rem;
   margin-bottom: 2rem;
+  font-family: var(--spare-font-family-primary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-/* line 24, src/scss/hero/_hero.scss */
 
 .hero .hero-content .subtext .info {
   display: flex;
@@ -1688,20 +1276,14 @@ html {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
-/* line 27, src/scss/hero/_hero.scss */
-
 .hero .hero-content .subtext .info .icon {
   margin-right: 1rem;
   width: 20px;
 }
 
-/* line 34, src/scss/hero/_hero.scss */
-
 .hero .hero-content img {
   display: inline-block;
 }
-
-/* line 39, src/scss/hero/_hero.scss */
 
 .hero .section-divider {
   position: absolute;
@@ -1721,13 +1303,9 @@ html {
   width: 100%;
 }
 
-/* line 44, src/scss/hero/_hero.scss */
-
 .hero .section-divider img {
   width: 100%;
 }
-
-/* line 1, src/scss/nav/_nav.scss */
 
 .nav {
   display: flex;
@@ -1737,18 +1315,14 @@ html {
   padding-top: 2rem;
   padding-bottom: 2rem;
   font-weight: 600;
+  text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
-  text-transform: uppercase;
 }
-
-/* line 5, src/scss/nav/_nav.scss */
 
 .nav .brand-logo {
   flex-grow: 0;
 }
-
-/* line 9, src/scss/nav/_nav.scss */
 
 .nav .navbar {
   flex-grow: 1;
@@ -1756,8 +1330,6 @@ html {
   padding-right: 2rem;
   text-align: center;
 }
-
-/* line 14, src/scss/nav/_nav.scss */
 
 .nav .navbar .nav-list-wrap {
   list-style-type: none;
@@ -1769,36 +1341,28 @@ html {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-/* line 18, src/scss/nav/_nav.scss */
-
 .nav .navbar .nav-list-wrap .nav-list {
   display: inline-block;
   padding: 1rem;
 }
 
-/* line 25, src/scss/nav/_nav.scss */
-
 .nav .contact {
   flex-grow: 0;
 }
 
-/* line 30, src/scss/nav/_nav.scss */
-
 .rolling-menu {
-  background-color: transparent;
   position: fixed;
   top: 0px;
   right: 0px;
   left: 0px;
   z-index: 10;
+  background-color: transparent;
   transition: all 0.6s;
   -webkit-transition: all 0.6s;
   -moz-transition: all 0.6s;
   -ms-transition: all 0.6s;
   -o-transition: all 0.6s;
 }
-
-/* line 40, src/scss/nav/_nav.scss */
 
 .scroll-down .rolling-menu {
   transform: translate3d(0, -100%, 0);
@@ -1808,8 +1372,6 @@ html {
   -o-transform: translate3d(0, -100%, 0);
 }
 
-/* line 48, src/scss/nav/_nav.scss */
-
 .scroll-up .rolling-menu {
   transform: none;
   -webkit-transform: none;
@@ -1818,12 +1380,10 @@ html {
   -o-transform: none;
 }
 
-/* line 57, src/scss/nav/_nav.scss */
-
 .scroll-down .rolling-menu,
 .scroll-up .rolling-menu {
-  background: #b4ec51;
-  background: linear-gradient(157deg, #b4ec51 0%, #429321 63%);
+  background: rgb(180, 236, 81);
+  background: linear-gradient(157deg, rgb(180, 236, 81) 0%, rgb(66, 147, 33) 63%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b4ec51",endColorstr="#429321",GradientType=1);
 }
 
@@ -1832,49 +1392,41 @@ html {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-/* line 1, src/scss/components/modal/_shared.scss */
-
 .modal {
-  background-color: transparent;
-  height: 1px;
-  opacity: 0;
-  overscroll-behavior-y: contain;
   position: fixed;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  width: 1px;
   z-index: 20;
+  height: 1px;
+  width: 1px;
+  overscroll-behavior-y: contain;
+  background-color: transparent;
+  opacity: 0;
 }
-
-/* line 4, src/scss/components/modal/_shared.scss */
 
 .modal.is-shown {
-  background-color: var(--spare-color-secondary);
   height: 100%;
-  opacity: 1;
   width: 100%;
+  background-color: var(--spare-color-secondary);
+  opacity: 1;
 }
-
-/* line 8, src/scss/components/modal/_shared.scss */
 
 .modal .close-btn {
   position: absolute;
   top: 1rem;
   right: 1rem;
   display: block;
+  text-align: right;
   font-family: var(--spare-font-family-secondary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
   font-size: 0.75rem;
   line-height: 1rem;
-  text-align: right;
+  font-weight: 700;
+  text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
-  text-transform: uppercase;
 }
-
-/* line 3, src/scss/components/modal/_modal.scss */
 
 .contact-modal {
   display: flex;
@@ -1883,43 +1435,40 @@ html {
   padding: 1rem;
 }
 
-/* line 7, src/scss/components/modal/_modal.scss */
-
 .contact-modal .form {
   padding: 2rem;
   width: 100%;
+  border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-  border-radius: 0.5rem;
   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @media (min-width: 768px) {
-  /* line 7, src/scss/components/modal/_modal.scss */
-
   .contact-modal .form {
     width: 500px;
   }
 }
 
-/* line 16, src/scss/components/modal/_modal.scss */
-
 .contact-modal .form .input-field-heading {
+  margin-bottom: 0.5rem;
   font-family: var(--spare-font-family-secondary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  margin-bottom: 0.5rem;
-  color: var(--spare-color-gray-dark);
+  font-weight: 700;
   text-transform: uppercase;
+  color: var(--spare-color-gray-dark);
 }
 
-/* line 20, src/scss/components/modal/_modal.scss */
-
 .contact-modal .form .input-field {
-  appearance: none;
   margin-bottom: 1rem;
+  width: 100%;
+  appearance: none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .contact-modal .form .input-field:focus {
@@ -1928,88 +1477,71 @@ html {
 }
 
 .contact-modal .form .input-field {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  width: 100%;
-  border-style: solid;
   border-bottom-width: 1px;
+  border-style: solid;
   font-family: var(--spare-font-family-primary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-/* line 26, src/scss/components/modal/_modal.scss */
 
 .contact-modal .form textarea {
   resize: none;
 }
 
-/* line 30, src/scss/components/modal/_modal.scss */
-
 .contact-modal .form .submit-btn {
-  display: block;
   margin-top: 1.5rem;
+  display: block;
+  width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  width: 100%;
+  text-align: center;
   font-family: var(--spare-font-family-primary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 900;
   font-size: 1.5rem;
   line-height: 2rem;
-  text-align: center;
+  font-weight: 900;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
   border-radius: 0.5rem;
-  background: #b4ec51;
-  background: linear-gradient(157deg, #b4ec51 0%, #429321 40%);
+  background: rgb(180, 236, 81);
+  background: linear-gradient(157deg, rgb(180, 236, 81) 0%, rgb(66, 147, 33) 40%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b4ec51",endColorstr="#429321",GradientType=1);
 }
 
-/* line 1, src/scss/sections/_shared.scss */
-
-.what-we-do .header .section-name, .how-to .header .section-name, .who-we-are .header .section-name, .faqs .header .section-name {
+.faqs .header .section-name, .who-we-are .header .section-name, .how-to .header .section-name, .what-we-do .header .section-name {
   display: block;
+  text-align: center;
   font-family: var(--spare-font-family-secondary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  text-align: center;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 5, src/scss/sections/_shared.scss */
-
-.what-we-do .header .header-text, .how-to .header .header-text, .who-we-are .header .header-text, .faqs .header .header-text {
+.faqs .header .header-text, .who-we-are .header .header-text, .how-to .header .header-text, .what-we-do .header .header-text {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 
 @media (min-width: 1024px) {
-  .what-we-do .header .header-text, .how-to .header .header-text, .who-we-are .header .header-text, .faqs .header .header-text {
+  .faqs .header .header-text, .who-we-are .header .header-text, .how-to .header .header-text, .what-we-do .header .header-text {
     width: 83.333333%;
   }
 }
 
-.what-we-do .header .header-text, .how-to .header .header-text, .who-we-are .header .header-text, .faqs .header .header-text {
+.faqs .header .header-text, .who-we-are .header .header-text, .how-to .header .header-text, .what-we-do .header .header-text {
+  text-align: center;
   font-family: var(--spare-font-family-secondary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 3rem;
   line-height: 1;
-  text-align: center;
 }
 
-/* line 10, src/scss/sections/_shared.scss */
-
-.what-we-do .header .subtext, .how-to .header .subtext, .who-we-are .header .subtext {
+.who-we-are .header .subtext, .how-to .header .subtext, .what-we-do .header .subtext {
+  text-align: center;
   font-family: var(--spare-font-family-primary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   line-height: 1.5rem;
-  text-align: center;
 }
-
-/* line 3, src/scss/sections/_what-we-do.scss */
 
 .what-we-do {
   padding-left: 3rem;
@@ -2018,87 +1550,69 @@ html {
   padding-bottom: 8rem;
 }
 
-/* line 6, src/scss/sections/_what-we-do.scss */
-
 .what-we-do .header > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-/* line 8, src/scss/sections/_what-we-do.scss */
-
 .what-we-do .header .section-name {
   color: var(--spare-color-secondary);
 }
-
-/* line 13, src/scss/sections/_what-we-do.scss */
 
 .what-we-do .header .header-text {
   color: var(--spare-color-secondary);
 }
 
-/* line 18, src/scss/sections/_what-we-do.scss */
-
 .what-we-do .header .subtext {
   color: var(--spare-color-gray-dark);
 }
 
-/* line 1, src/scss/sections/_shared.scss */
-
-.what-we-do .header .section-name, .how-to .header .section-name, .who-we-are .header .section-name, .faqs .header .section-name {
+.faqs .header .section-name, .who-we-are .header .section-name, .how-to .header .section-name, .what-we-do .header .section-name {
   display: block;
+  text-align: center;
   font-family: var(--spare-font-family-secondary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  text-align: center;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 5, src/scss/sections/_shared.scss */
-
-.what-we-do .header .header-text, .how-to .header .header-text, .who-we-are .header .header-text, .faqs .header .header-text {
+.faqs .header .header-text, .who-we-are .header .header-text, .how-to .header .header-text, .what-we-do .header .header-text {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 
 @media (min-width: 1024px) {
-  .what-we-do .header .header-text, .how-to .header .header-text, .who-we-are .header .header-text, .faqs .header .header-text {
+  .faqs .header .header-text, .who-we-are .header .header-text, .how-to .header .header-text, .what-we-do .header .header-text {
     width: 83.333333%;
   }
 }
 
-.what-we-do .header .header-text, .how-to .header .header-text, .who-we-are .header .header-text, .faqs .header .header-text {
+.faqs .header .header-text, .who-we-are .header .header-text, .how-to .header .header-text, .what-we-do .header .header-text {
+  text-align: center;
   font-family: var(--spare-font-family-secondary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 3rem;
   line-height: 1;
-  text-align: center;
 }
 
-/* line 10, src/scss/sections/_shared.scss */
-
-.what-we-do .header .subtext, .how-to .header .subtext, .who-we-are .header .subtext {
+.who-we-are .header .subtext, .how-to .header .subtext, .what-we-do .header .subtext {
+  text-align: center;
   font-family: var(--spare-font-family-primary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   line-height: 1.5rem;
-  text-align: center;
 }
 
-/* line 3, src/scss/sections/_how-to.scss */
-
 .how-to {
+  position: relative;
   padding-left: 3rem;
   padding-right: 3rem;
-  padding-bottom: 13rem;
   padding-top: 15rem;
-  position: relative;
+  padding-bottom: 13rem;
   padding-top: 230px;
   background-color: var(--spare-color-secondary);
 }
-
-/* line 8, src/scss/sections/_how-to.scss */
 
 .how-to .header > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -2106,28 +1620,25 @@ html {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-/* line 10, src/scss/sections/_how-to.scss */
-
 .how-to .header .section-name {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
-
-/* line 15, src/scss/sections/_how-to.scss */
 
 .how-to .header .header-text {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
-/* line 20, src/scss/sections/_how-to.scss */
-
 .how-to .header .subtext {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
-/* line 26, src/scss/sections/_how-to.scss */
+.how-to .section-content {
+  display: flex;
+  align-items: center;
+}
 
 .how-to .section-content > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -2136,33 +1647,25 @@ html {
 }
 
 .how-to .section-content {
-  display: flex;
-  align-items: center;
   margin-top: 8rem;
   font-family: var(--spare-font-family-primary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-/* line 31, src/scss/sections/_how-to.scss */
-
 .how-to .section-content .section-intro {
-  font-weight: 600;
+  margin-bottom: 3rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  margin-bottom: 3rem;
+  font-weight: 600;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
-/* line 36, src/scss/sections/_how-to.scss */
-
 .how-to .section-content .step-item .header {
-  font-weight: 600;
   margin-bottom: 0.5rem;
-  color: var(--spare-color-green-lighter);
+  font-weight: 600;
   text-transform: uppercase;
+  color: var(--spare-color-green-lighter);
 }
-
-/* line 40, src/scss/sections/_how-to.scss */
 
 .how-to .section-content .step-item .info {
   font-size: 1rem;
@@ -2170,8 +1673,6 @@ html {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
-
-/* line 43, src/scss/sections/_how-to.scss */
 
 .how-to .section-content .step-item .info .item-list {
   display: flex;
@@ -2182,48 +1683,40 @@ html {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
-/* line 46, src/scss/sections/_how-to.scss */
-
 .how-to .section-content .step-item .info .item-list .icon {
   margin-right: 0.5rem;
   width: 12px;
 }
 
-/* line 53, src/scss/sections/_how-to.scss */
-
 .how-to .section-content .step-item .partner-cta {
   font-family: var(--spare-font-family-secondary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
   font-size: 2.25rem;
   line-height: 2.5rem;
+  font-weight: 700;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
-/* line 57, src/scss/sections/_how-to.scss */
-
 .how-to .section-content .step-item .cta-btn {
-  display: block;
   margin-top: 1.5rem;
+  display: block;
+  width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  width: 100%;
+  text-align: center;
   font-family: var(--spare-font-family-primary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 900;
   font-size: 1.5rem;
   line-height: 2rem;
-  text-align: center;
+  font-weight: 900;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
   border-radius: 0.5rem;
-  background: #b4ec51;
-  background: linear-gradient(157deg, #b4ec51 0%, #429321 40%);
+  background: rgb(180, 236, 81);
+  background: linear-gradient(157deg, rgb(180, 236, 81) 0%, rgb(66, 147, 33) 40%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b4ec51",endColorstr="#429321",GradientType=1);
 }
-
-/* line 70, src/scss/sections/_how-to.scss */
 
 .how-to .section-divider {
   position: absolute;
@@ -2243,21 +1736,17 @@ html {
   width: 100%;
 }
 
-/* line 75, src/scss/sections/_how-to.scss */
-
 .how-to .section-divider img {
   width: 100%;
 }
 
-/* line 80, src/scss/sections/_how-to.scss */
-
 .how-to .section-divider-middle {
   position: absolute;
-  left: 0px;
   bottom: -0.125rem;
+  left: 0px;
   right: 0px;
-  left: 0px;
   bottom: -0.125rem;
+  left: 0px;
 }
 
 @media (min-width: 1300px) {
@@ -2271,55 +1760,45 @@ html {
   width: 100%;
 }
 
-/* line 86, src/scss/sections/_how-to.scss */
-
 .how-to .section-divider-middle img {
   width: 100%;
 }
 
-/* line 1, src/scss/sections/_shared.scss */
-
-.what-we-do .header .section-name, .how-to .header .section-name, .who-we-are .header .section-name, .faqs .header .section-name {
+.faqs .header .section-name, .who-we-are .header .section-name, .what-we-do .header .section-name, .how-to .header .section-name {
   display: block;
+  text-align: center;
   font-family: var(--spare-font-family-secondary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  text-align: center;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 5, src/scss/sections/_shared.scss */
-
-.what-we-do .header .header-text, .how-to .header .header-text, .who-we-are .header .header-text, .faqs .header .header-text {
+.faqs .header .header-text, .who-we-are .header .header-text, .what-we-do .header .header-text, .how-to .header .header-text {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 
 @media (min-width: 1024px) {
-  .what-we-do .header .header-text, .how-to .header .header-text, .who-we-are .header .header-text, .faqs .header .header-text {
+  .faqs .header .header-text, .who-we-are .header .header-text, .what-we-do .header .header-text, .how-to .header .header-text {
     width: 83.333333%;
   }
 }
 
-.what-we-do .header .header-text, .how-to .header .header-text, .who-we-are .header .header-text, .faqs .header .header-text {
+.faqs .header .header-text, .who-we-are .header .header-text, .what-we-do .header .header-text, .how-to .header .header-text {
+  text-align: center;
   font-family: var(--spare-font-family-secondary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 3rem;
   line-height: 1;
-  text-align: center;
 }
 
-/* line 10, src/scss/sections/_shared.scss */
-
-.what-we-do .header .subtext, .how-to .header .subtext, .who-we-are .header .subtext {
+.who-we-are .header .subtext, .what-we-do .header .subtext, .how-to .header .subtext {
+  text-align: center;
   font-family: var(--spare-font-family-primary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   line-height: 1.5rem;
-  text-align: center;
 }
-
-/* line 3, src/scss/sections/_who-we-are.scss */
 
 .who-we-are {
   padding-left: 3rem;
@@ -2328,65 +1807,45 @@ html {
   padding-bottom: 8rem;
 }
 
-/* line 6, src/scss/sections/_who-we-are.scss */
-
 .who-we-are .header > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-/* line 8, src/scss/sections/_who-we-are.scss */
-
 .who-we-are .header .section-name {
   color: var(--spare-color-secondary);
 }
-
-/* line 13, src/scss/sections/_who-we-are.scss */
 
 .who-we-are .header .header-text {
   color: var(--spare-color-secondary);
 }
 
-/* line 18, src/scss/sections/_who-we-are.scss */
-
 .who-we-are .header .subtext {
   color: var(--spare-color-gray-dark);
 }
-
-/* line 24, src/scss/sections/_who-we-are.scss */
 
 .who-we-are .vision-list {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
-/* line 26, src/scss/sections/_who-we-are.scss */
-
 .who-we-are .vision-list .vision {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
-/* line 30, src/scss/sections/_who-we-are.scss */
-
 .who-we-are .vision-list .vision:first-child .icon-wrap {
   background-color: var(--spare-color-yellow-light);
 }
-
-/* line 36, src/scss/sections/_who-we-are.scss */
 
 .who-we-are .vision-list .vision:nth-child(2) .icon-wrap {
   background-color: var(--spare-color-red-light);
 }
 
-/* line 42, src/scss/sections/_who-we-are.scss */
-
 .who-we-are .vision-list .vision:last-child .icon-wrap {
   background-color: var(--spare-color-blue-light);
 }
-
-/* line 47, src/scss/sections/_who-we-are.scss */
 
 .who-we-are .vision-list .vision .icon-wrap {
   border-radius: 9999px;
@@ -2394,43 +1853,35 @@ html {
   width: 4.5rem;
 }
 
-/* line 52, src/scss/sections/_who-we-are.scss */
-
 .who-we-are .vision-list .vision .vision-item {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   display: block;
   font-family: var(--spare-font-family-secondary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   color: var(--spare-color-secondary);
   font-size: 2rem;
   line-height: 1.3;
 }
 
-/* line 58, src/scss/sections/_who-we-are.scss */
-
 .who-we-are .vision-list .vision .info {
   color: var(--spare-color-gray-dark);
 }
 
-/* line 1, src/scss/sections/_cta.scss */
-
 .cta-section {
   background-color: var(--spare-color-gray-light);
-  font-size: 1.875rem;
-  line-height: 2.25rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
-
-/* line 4, src/scss/sections/_cta.scss */
 
 .cta-section .quote {
   display: flex;
   align-items: center;
+  padding-left: 0px;
   font-family: var(--spare-font-family-secondary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  padding-left: 0px;
   color: var(--spare-color-secondary);
 }
 
@@ -2440,21 +1891,17 @@ html {
   }
 }
 
-/* line 7, src/scss/sections/_cta.scss */
-
 .cta-section .quote span {
   font-family: var(--spare-font-family-primary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
   color: var(--spare-color-gray-dark);
 }
 
-/* line 12, src/scss/sections/_cta.scss */
-
 .cta-section .download-btn {
-  display: flex;
-  align-items: center;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  align-items: center;
   padding-right: 0px;
 }
 
@@ -2464,49 +1911,41 @@ html {
   }
 }
 
-/* line 1, src/scss/sections/_shared.scss */
-
-.what-we-do .header .section-name, .how-to .header .section-name, .who-we-are .header .section-name, .faqs .header .section-name {
+.faqs .header .section-name, .what-we-do .header .section-name, .how-to .header .section-name, .who-we-are .header .section-name {
   display: block;
+  text-align: center;
   font-family: var(--spare-font-family-secondary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  text-align: center;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 5, src/scss/sections/_shared.scss */
-
-.what-we-do .header .header-text, .how-to .header .header-text, .who-we-are .header .header-text, .faqs .header .header-text {
+.faqs .header .header-text, .what-we-do .header .header-text, .how-to .header .header-text, .who-we-are .header .header-text {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 
 @media (min-width: 1024px) {
-  .what-we-do .header .header-text, .how-to .header .header-text, .who-we-are .header .header-text, .faqs .header .header-text {
+  .faqs .header .header-text, .what-we-do .header .header-text, .how-to .header .header-text, .who-we-are .header .header-text {
     width: 83.333333%;
   }
 }
 
-.what-we-do .header .header-text, .how-to .header .header-text, .who-we-are .header .header-text, .faqs .header .header-text {
+.faqs .header .header-text, .what-we-do .header .header-text, .how-to .header .header-text, .who-we-are .header .header-text {
+  text-align: center;
   font-family: var(--spare-font-family-secondary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 3rem;
   line-height: 1;
-  text-align: center;
 }
 
-/* line 10, src/scss/sections/_shared.scss */
-
 .what-we-do .header .subtext, .how-to .header .subtext, .who-we-are .header .subtext {
+  text-align: center;
   font-family: var(--spare-font-family-primary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   line-height: 1.5rem;
-  text-align: center;
 }
-
-/* line 3, src/scss/sections/_faqs.scss */
 
 .faqs {
   padding-left: 3rem;
@@ -2515,58 +1954,44 @@ html {
   padding-bottom: 6rem;
 }
 
-/* line 6, src/scss/sections/_faqs.scss */
-
 .faqs .header > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-/* line 8, src/scss/sections/_faqs.scss */
-
 .faqs .header .section-name {
   color: var(--spare-color-secondary);
 }
 
-/* line 13, src/scss/sections/_faqs.scss */
-
 .faqs .header .header-text {
   color: var(--spare-color-secondary);
 }
-
-/* line 19, src/scss/sections/_faqs.scss */
 
 .faqs .faq-list {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-/* line 22, src/scss/sections/_faqs.scss */
-
 .faqs .faq-list .faq {
   display: flex;
   align-items: baseline;
 }
 
-/* line 25, src/scss/sections/_faqs.scss */
-
 .faqs .faq-list .faq .faq-icon {
-  background-color: var(--spare-color-green-lighter);
-  border-radius: 9999px;
-  flex: none;
-  font-family: var(--spare-font-family-primary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
   height: 3rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  width: 3rem;
+  flex: none;
+  border-radius: 9999px;
+  background-color: var(--spare-color-green-lighter);
   padding: 0.5rem;
   text-align: center;
+  font-family: var(--spare-font-family-primary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
   color: var(--spare-color-green-dark);
-  width: 3rem;
 }
-
-/* line 29, src/scss/sections/_faqs.scss */
 
 .faqs .faq-list .faq .faq-details {
   padding-left: 0px;
@@ -2580,55 +2005,48 @@ html {
   }
 }
 
-/* line 32, src/scss/sections/_faqs.scss */
-
 .faqs .faq-list .faq .faq-details .header {
+  margin-bottom: 1rem;
   font-family: var(--spare-font-family-secondary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.75rem;
-  margin-bottom: 1rem;
+  font-weight: 700;
   color: var(--spare-color-secondary);
 }
-
-/* line 36, src/scss/sections/_faqs.scss */
 
 .faqs .faq-list .faq .faq-details .details {
   font-family: var(--spare-font-family-primary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: var(--spare-color-gray-dark);
 }
 
-/* line 3, src/scss/sections/_mission.scss */
-
 .mission-list .mission .mission-icon {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2rem;
   margin-top: 4rem;
+  margin-bottom: 2rem;
   width: 10rem;
 }
 
-/* line 7, src/scss/sections/_mission.scss */
-
 .mission-list .mission .mission-item {
   display: block;
+  text-align: center;
   font-family: var(--spare-font-family-secondary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  text-align: center;
+  font-weight: 700;
   color: var(--spare-color-secondary);
 }
 
-/* line 1, src/scss/footer/_footer.scss */
-
 .footer {
-  font-family: var(--spare-font-family-primary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   padding-top: 2rem;
   padding-bottom: 2rem;
+  font-family: var(--spare-font-family-primary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
-  background: #b4ec51;
-  background: linear-gradient(157deg, #b4ec51 0%, #429321 40%);
+  background: rgb(180, 236, 81);
+  background: linear-gradient(157deg, rgb(180, 236, 81) 0%, rgb(66, 147, 33) 40%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b4ec51",endColorstr="#429321",GradientType=1);
 }
+
+/*purgecss end ignore
+ */

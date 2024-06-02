@@ -1,14 +1,14 @@
 /*!
  * spare-landing-page v0.0.1
  * Spare Landing Page
- * (c) 2021 Brian Matthew B. Mamaril
+ * (c) 2024 Brian Matthew B. Mamaril
  * MIT License
  * 
  */
 
-/*! tailwindcss v2.0.3 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
 
-/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
 Document
@@ -20,8 +20,8 @@ Use a better box model (opinionated).
 */
 
 *,
-*::before,
-*::after {
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -29,7 +29,7 @@ Use a better box model (opinionated).
 Use a more readable tab size (opinionated).
 */
 
-:root {
+html {
   -moz-tab-size: 4;
   tab-size: 4;
 }
@@ -218,6 +218,11 @@ button,
 Remove the inner border and padding in Firefox.
 */
 
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
 /**
 Restore the focus styles unset by the previous rule.
 */
@@ -247,19 +252,38 @@ progress {
 Correct the cursor style of increment and decrement buttons in Safari.
 */
 
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
 /**
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
 
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
 /**
 Remove the inner padding in Chrome and Safari on macOS.
 */
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
 
 /**
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Change font properties to 'inherit' in Safari.
 */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
 
 /*
 Interactive
@@ -303,16 +327,6 @@ pre {
 button {
   background-color: transparent;
   background-image: none;
-}
-
-/**
- * Work around a Firefox/IE bug where the transparent `button` background
- * results in a loss of the default `button` focus styles.
- */
-
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
 }
 
 fieldset {
@@ -385,7 +399,7 @@ body {
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: #e5e7eb; /* 2 */
+  border-color: currentColor; /* 2 */
 }
 
 /*
@@ -424,6 +438,14 @@ button,
 [role="button"] {
   cursor: pointer;
 }
+
+/**
+ * Override legacy focus reset from Normalize with modern Firefox focus styles.
+ *
+ * This is actually an improvement over the new defaults in Firefox in our testing,
+ * as it triggers the better focus styles even for links, which still use a dotted
+ * outline in Firefox by default.
+ */
 
 table {
   border-collapse: collapse;
@@ -482,11 +504,20 @@ samp {
 }
 
 /**
- * Make replaced elements `display: block` by default as that's
- * the behavior you want almost all of the time. Inspired by
- * CSS Remedy, with `svg` added as well.
+ * 1. Make replaced elements `display: block` by default as that's
+ *    the behavior you want almost all of the time. Inspired by
+ *    CSS Remedy, with `svg` added as well.
  *
- * https://github.com/mozdevs/cssremedy/issues/14
+ *    https://github.com/mozdevs/cssremedy/issues/14
+ * 
+ * 2. Add `vertical-align: middle` to align replaced elements more
+ *    sensibly by default when overriding `display` by adding a
+ *    utility like `inline`.
+ *
+ *    This can trigger a poorly considered linting error in some
+ *    tools but is included by design.
+ * 
+ *    https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210
  */
 
 img,
@@ -497,13 +528,13 @@ audio,
 iframe,
 embed,
 object {
-  display: block;
-  vertical-align: middle;
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
 }
 
 /**
  * Constrain images and videos to the parent width and preserve
- * their instrinsic aspect ratio.
+ * their intrinsic aspect ratio.
  *
  * https://github.com/mozdevs/cssremedy/issues/14
  */
@@ -512,6 +543,19 @@ img,
 video {
   max-width: 100%;
   height: auto;
+}
+
+/**
+ * Ensure the default browser behavior of the `hidden` attribute.
+ */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+  --tw-border-opacity: 1;
+  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
 .container {
@@ -532,21 +576,16 @@ video {
   }
 }
 
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+.col-span-1 {
+  grid-column: span 1 / span 1;
 }
 
-.border-opacity-75 {
-  --tw-border-opacity: 0.75;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
-.border-dashed {
-  border-style: dashed;
-}
-
-.border-b {
-  border-bottom-width: 1px;
+.ml-auto {
+  margin-left: auto;
 }
 
 .inline-block {
@@ -569,117 +608,12 @@ video {
   display: none;
 }
 
-.items-center {
-  align-items: center;
-}
-
-.justify-end {
-  justify-content: flex-end;
-}
-
 .flex-auto {
   flex: 1 1 auto;
 }
 
 .flex-none {
   flex: none;
-}
-
-.font-source-pro {
-  font-family: var(--spare-font-family-primary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.list-none {
-  list-style-type: none;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-* {
-  --tw-shadow: 0 0 #0000;
-}
-
-* {
-  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgba(59, 130, 246, 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-}
-
-.fill-current {
-  fill: currentColor;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-
-.text-spare-primary {
-  color: var(--spare-color-primary);
-}
-
-.text-spare-secondary {
-  color: var(--spare-color-secondary);
-}
-
-.antialiased {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
-}
-
-.gap-y-16 {
-  row-gap: 4rem;
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.col-span-1 {
-  grid-column: span 1 / span 1;
 }
 
 .transform {
@@ -722,6 +656,116 @@ video {
     transform: none;
     animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-y-16 {
+  row-gap: 4rem;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+}
+
+.border-opacity-75 {
+  --tw-border-opacity: 0.75;
+}
+
+.fill-current {
+  fill: currentColor;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-source-pro {
+  font-family: var(--spare-font-family-primary), sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.text-spare-primary {
+  color: var(--spare-color-primary);
+}
+
+.text-spare-secondary {
+  color: var(--spare-color-secondary);
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, ::before, ::after {
+  --tw-shadow: 0 0 #0000;
+}
+
+*, ::before, ::after {
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgba(59, 130, 246, 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
 }
 
 @media (min-width: 640px) {
